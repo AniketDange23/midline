@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import ContactPage from "./Pages/ContactPage.jsx";
-import ProjectPage from "./Pages/ProjectPage.jsx";
+// import ProjectPage from "./Pages/ProjectPage.jsx";
 import ServicesPage from "./Pages/ServicesPage.jsx";
 import AboutPage from "./Pages/AboutPage.jsx";
 
@@ -32,10 +32,10 @@ const router = createBrowserRouter([
         element: <ContactPage />,
       },
 
-      {
-        path: "/project",
-        element: <ProjectPage />,
-      },
+      // {
+      //   path: "/project",
+      //   element: <ProjectPage />,
+      // },
 
       {
         path: "/healthproject",
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
 
 
       {
-        path: "/service",
+        path: "/services",
         element: <ServicesPage />,
       },
       {

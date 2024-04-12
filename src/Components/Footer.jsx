@@ -1,6 +1,9 @@
 import { FaFacebook, FaLinkedin, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
-import { MdOutlineArrowRight } from "react-icons/md";// import "./Footer.css";
-import { HiPhone } from "react-icons/hi";
+import { FiPhone } from "react-icons/fi";
+import { IoMdArrowDropright } from "react-icons/io";
+import { LuMail } from "react-icons/lu";
+import { IoLocationOutline } from "react-icons/io5";
+
 const Footer = () => {
   return (
     <footer>
@@ -8,7 +11,7 @@ const Footer = () => {
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5 mb-5 mb-lg-0">
-              <a className="mb-4 d-inline-block LogoImage" href="#"><img className="img-fluid" src="/footer.png" alt="" /></a>
+              <a className="mb-4 d-inline-block LogoImage" href="#"><img className="img-fluid" src="/footerlogo.png" alt="" /></a>
               <p className="text-light">Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt ut
                 labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamaboris nisi ut aliquip.exea
                 commodo consequat. Duis aute irure dolor in reprehenderit.</p>
@@ -31,22 +34,28 @@ const Footer = () => {
               <div className="row">
                 <div className="col-6 mb-5">
                   <h4 className="text-white mb-4">Services</h4>
-                  <ul >
-                    <li className="mb-3 " style={{ padding: "0" }}><a href="/" className='text-light '> <MdOutlineArrowRight />Home</a></li>
-                    <li className="mb-3 " style={{ padding: "0" }}><a href="/about" className='text-light'> <MdOutlineArrowRight/>About</a></li>
-                    <li className="mb-3 " style={{ padding: "0" }}><a href="/services" className='text-light'> <MdOutlineArrowRight/>Services</a></li>
-                    <li className="mb-3 " style={{ padding: "0" }}><a href="/projects" className='text-light'> <MdOutlineArrowRight/>Projects</a></li>
-                    <li className="mb-3 " style={{ padding: "0" }}><a href="/contact" className='text-light'> <MdOutlineArrowRight/>Contact</a></li>
-
-                    
+                  <ul className="list-styled">
+                    <li className="mb-3 text-light" style={{ padding: "0" }}>
+                    <a className="text-light d-block" href="/"><IoMdArrowDropright style={{ fontSize: "20px", marginRight: "2px" }} />Home</a></li>
+                    <li className="mb-3 text-light" style={{ padding: "0" }}>
+                    <a className="text-light d-block" href="/contact"><IoMdArrowDropright style={{ fontSize: "20px", marginRight: "2px" }} />Contact Us</a></li>
+                    <li className="mb-3 text-light" style={{ padding: "0" }}>
+                    <a className="text-light d-block" href="/about"><IoMdArrowDropright style={{ fontSize: "20px", marginRight: "2px" }} />About Us</a></li>
+                    <li className="mb-3 text-light" style={{ padding: "0" }}>
+                    <a className="text-light d-block" href="/services"><IoMdArrowDropright style={{ fontSize: "20px", marginRight: "2px" }} />Services</a></li>
+                    <li className="mb-3 text-light" style={{ padding: "0" }}>
+                    <a className="text-light d-block" href="/healthproject"><IoMdArrowDropright style={{ fontSize: "20px", marginRight: "2px" }} />Projects</a></li>
                   </ul>
                 </div>
                 <div className="col-6 mb-5">
                   <h4 className="text-white mb-4">Contact Info</h4>
-                  <ul className="list-unstyled">
-                    <li className="mb-3 text-light" style={{ padding: "0" }}><a className="text-light d-block" href="#"> <FaMapMarkerAlt/> Opposite Bank of Baroda, Ward Number 3, Parsodi, Trimurtee Nagar, Nagpur, Maharashtra 440022 </a></li>
-                    <li className="mb-3 text-light" style={{ padding: "0" }}><a className="text-light d-block" href="#"> <HiPhone/> +91 8668681466</a></li>
-                    <li className="mb-3 text-light" style={{ padding: "0" }}><a className="text-light d-block" href="#"> <FaEnvelope/> info@elioratechno</a></li>
+                  <ul className="list-unstyled ">
+                    <li className="mb-3 text-light" style={{ padding: "0" }}>
+                    <a className="text-light d-block" href="#"> <IoLocationOutline /> Opposite Bank of Baroda, Ward Number 3, Parsodi, Trimurtee Nagar, Nagpur, Maharashtra 440022 </a></li>
+                    <li className="mb-3 text-light" style={{ padding: "0" }}>
+                    <a className="text-light d-block" href="callto:+91 8956101181"><FiPhone/> +91 8668681466</a></li>
+                    <li className="mb-3 text-light" style={{ padding: "0" }}>
+                    <a className="text-light d-block" href="mailto:info@elioratechno.com"><LuMail/> info@elioratechno</a></li>
                   </ul>
                 </div>
                 <div className="col-12">

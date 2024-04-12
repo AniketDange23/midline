@@ -4,27 +4,23 @@ import React from 'react';
 const serviceData = [
   {
     icon: "/seo.svg",
-    title: "SEO Marketing",
-    description: "SEO marketing is an important method we use for inbound traffic generation. SEO tools like Google Ads, on-site search bars can be used to identify broad search intent and seed keywords. Inbound marketing is a combination of different marketing strategies that convert website visitors into qualified leads through blogging. Inbound marketing uses well-crafted and highly targeted content to attract customers by meeting them where they are. For better SEO, we focus on writing EAT content - or content with Expertise, Authority, and Trustworthiness. When SEO is correctly aligned with inbound marketing, it generates inbound leads by attracting and engaging users to your business."
-  },
+    title: "Cold Calling",
+    description: "Cold calling is a technique we use where a salesperson contacts individuals or businesses who have not previously expressed interest in the product or service. The term cold refers to the fact that the salesperson has no prior relationship with the prospect and is initiating contact without any warm introduction or existing connection"},
  
   {
     icon: "/digital.svg",
-    title: "Digital Marketing",
-    description: "Elevate your brand's digital presence with our comprehensive digital marketing solutions. At midline, we specialize in driving online success through a strategic blend of Search Engine Optimization (SEO), Social Media Management, Pay-Per-Click (PPC) Advertising, and Content Marketing. Our team crafts compelling and shareable content, maximizes your website's visibility on search engines, and engages your audience across social platforms. With a data-driven approach, we fine-tune strategies to deliver measurable results. Partner with us to transform your online presence, connect with your target audience, and stay ahead in the digital landscape."
+    title: "Appointment setting",
+    description: "Appointment setting can be done through various channels, including cold calling, email outreach, social media messaging, and networking events. It requires effective communication skills, persistence, and the ability to qualify leads to ensure that the scheduled appointments have a high likelihood of converting into sales opportunities."
   },
    {
     icon: "/call.svg",
-    title: "Click to Call Lead Generation",
-    description: `Click to call lead generation is a tactic used in inbound marketing strategies. It involves using a dedicated Facebook call capture/tracking phone number to generate leads from Facebook Ads. Other effective strategies for lead generation include webinars, SEO, and content marketing. Click-to-call is an effective tactic offered by Business Nucleus as part of their marketing services.
-    strategies we use for click to call lead generation.
-
-The strategies for click to call lead generation include creating a new lead generation campaign in Ads Manager and selecting phone as the "lead method" under the ad set settings Using a dedicated Facebook call capture/tracking phone number is also important for generating leads from call now ad units Click-to-call is an effective tactic offered by Business Nucleus as part of their marketing services.`
+    title: "Lead Generation",
+    description: `Lead generation is the process of identifying and attracting potential customers, or "leads," who have shown interest in a company's products or services. The goal of lead generation is to gather contact information and other relevant details about individuals or organizations that are likely to become customers.`
   },
   {
     icon: "/web.svg",
-    title: "Website Development",
-    description: "Website development services encompass a broad spectrum of offerings aimed at creating and maintaining effective online platforms. These services can be provided by freelancers, specialized agencies, or in-house teams. They involve the construction of websites using fundamental technologies like HTML, CSS, and JavaScript, with options for static or dynamic content. Additionally, web application development involves creating interactive and responsive interfaces using frameworks like React, Angular, or Vue.js, and server-side logic with technologies such as Node.js or Django. Web developers also specialize in API development and integration, facilitating communication between different software systems. Security measures, including protection against threats like SQL injection and cross-site scripting, are integral components. Ongoing maintenance and support services ensure the longevity and reliability of websites and applications."
+    title: "Sales ",
+    description: "Sales refers to the process of persuading, convincing, and ultimately securing commitments from potential customers to purchase products or services offered by a business. It involves a series of interactions and activities aimed at identifying, attracting, engaging, and converting leads into paying customers."
   }
 ];
 

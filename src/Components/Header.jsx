@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,11 +24,15 @@ const Header = () => {
     };
   }, []);
 
+  const toggleNavbar = () => {
+    setIsNavCollapsed(!isNavCollapsed);
+  };
+
   const navLinks = [
     { text: "Home", link: "/" },
     { text: "About Us", link: "/about" },
-    { text: "Services", link: "/service" },
-    { text: "Project", link: "/project" },
+    { text: "Services", link: "/services" },
+    { text: "Project", link: "/healthproject" },
     { text: "Contact", link: "/contact" },
   ];
 
@@ -38,7 +43,7 @@ const Header = () => {
       }`}
     >
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light bg-white">
+        <nav className="navbar navbar-expand-lg navbar-light bg-white ">
           <a className="navbar-brand" href="/">
             <img
               className="img-fluid LogoImage"
@@ -50,23 +55,28 @@ const Header = () => {
           <button
             className="navbar-toggler border-0"
             type="button"
-            data-toggle="collapse"
-            data-target="#navigation"
+            onClick={toggleNavbar}
             aria-controls="navigation"
-            aria-expanded="false"
+            aria-expanded={!isNavCollapsed ? "true" : "false"}
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
 
           <div
-            className="collapse navbar-collapse text-center pb-lg-0"
+            className={`collapse navbar-collapse text-center ${
+              !isNavCollapsed ? "show" : ""
+            } pb-lg-0`}
             id="navigation"
           >
             <ul className="navbar-nav ml-auto">
               {navLinks.map((link, index) => (
                 <li key={index} className="nav-item">
-                  <NavLink className="nav-link" to={link.link}>
+                  <NavLink
+                    className="nav-link"
+                    to={link.link}
+                    onClick={toggleNavbar}
+                  >
                     {link.text}
                   </NavLink>
                 </li>
@@ -75,7 +85,7 @@ const Header = () => {
             {/* search */}
             <div className="search px-4 pb-3 pb-lg-0"></div>
             {/* get start btn */}
-            <a href="service.html" className="btn btn-primary hover-ripple">
+            <a href="/contact" className="btn btn-primary hover-ripple">
               get started
             </a>
           </div>

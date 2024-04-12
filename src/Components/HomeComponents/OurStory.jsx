@@ -30,7 +30,7 @@ const OurStory = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-5">
+          <div className="col-lg-5 d-flex justify-content-center">
             <div className="text-center  g-0">
             <TeamSection  />
             </div>

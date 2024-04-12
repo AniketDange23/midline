@@ -1,13 +1,14 @@
 const AboutSection = () => {
   return (
-    <div className="container py-5">
+    <div className="container p-2 g-0">
       <div className="row justify-content-between align-items-center">
-      <div className="col-lg-4 offset-lg-2 order-lg-1 order-2">
-            <div className="feature-img-bg box-shadow ">
+      <div className="col-lg-5 m order-2">
+            <div className="feature-img-bg py-3 ">
               <img
-                className="img-fluid w-100 rounded-5"
-                src="/h1.jpg"
+                className="img-fluid rounded-5"
+                src="/h3.jpg"
                 alt="feature-image"
+                style={{maxWidth:"500px"}}
               />
             </div>
           </div>
