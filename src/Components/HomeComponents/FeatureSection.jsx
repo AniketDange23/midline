@@ -1,51 +1,41 @@
 
-const FeatureSection = () => {
+const data = [
+  { count: "3", title: " Years Experience", description: "Three years of dedicated innovation, delivering excellence every step of the way." },
+  { count: "9", title: "Happy Clients", description: "Serving 9 satisfied clients with exceptional service and results that exceed expectations." },
+  { count: "250", title: " Best Calling Service", description: "Providing the best calling service to 250 clients, ensuring seamless communication." },
+  { count: "70", title: "Expert Workers", description: "Our team of 70 experts brings unparalleled skills and knowledge to every project." },
+]
+
+const Home = () => {
   return (
-      <div className="container mt-5 ">
-        <div className="row">
-          {/* Feature item 1 */}
-          <div className="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-            <div className="bg-white py-5 px-4 text-center box-shadow transition hover-bg-dark active">
-              <div className="icon-bg mb-4 water-wave">
-              <h3 className="text-black mb-0"><span className="count icon" data-count="3">0</span></h3>    
-                  </div>
-              <h4 className="mb-4">Years Experience
-</h4>
-            </div>
-          </div>
-          {/* Feature item 2 */}
-          <div className="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-            <div className="bg-white py-5 px-4 text-center box-shadow transition hover-bg-dark">
-              <div className="icon-bg mb-4 water-wave">
-              <h3 className="text-black mb-0"><span className="count icon" data-count="70">0</span></h3>    
+    <div className='container  g-0 '>
+      <div className='row '>
+        <div className='col-lg-6  align-content-center justify-content-center'>
+          <h1>Welcome to MIDLINE Media Solution</h1>
+          <p className="mb-4">
+            Midline media solution founded in 2020. Over the years, we have
+            grown into a versatile and forward-thinking organization, dedicated
+            to empowering businesses across various industries. Our team
+            comprises talented professionals from diverse backgrounds, allowing
+            us to offer comprehensive solutions designed to meet the unique
+            needs of our clients.
+          </p>
+          <button className="button"> <a href="/services">Know More</a> </button>
+        </div>
+        <div className="col-lg-6 py-2 align-content-center  d-flex flex-wrap">
+          {data.map((item, index) => (
+            <div className="col-lg-6" key={index}>
+              <div className="card mt-3">
+                <h5 className="icon-bg  text-white water-wave align-content-center text-center  count" data-count={item.count}>0</h5>
+                <h4>{item.title}</h4>
+                <p>{item.description}</p>
               </div>
-              <h4 className="mb-4">Expert Worker
-</h4>
             </div>
-          </div>
-          {/* Feature item 3 */}
-          <div className="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-            <div className="bg-white py-5 px-4 text-center box-shadow transition hover-bg-dark">
-              <div className="icon-bg mb-4 water-wave">
-              <h3 className="text-black mb-0"><span className="count icon" data-count="9">0</span></h3>    
-              </div>
-              <h4 className="mb-4">Happy Clients
-</h4>
-            </div>
-          </div>
-          {/* Feature item 4 */}
-          <div className="col-lg-3 col-sm-6 mb-4 mb-lg-0">
-            <div className="bg-white py-5 px-4 text-center box-shadow transition hover-bg-dark">
-              <div className="icon-bg mb-4 water-wave">
-              <h3 className="text-black mb-0"><span className="count icon" data-count="250">0</span></h3>    
-              </div>
-              <h4 className="mb-4">Best Calling Service
-</h4>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
+    </div>
   );
-}
+};
 
-export default FeatureSection;
+export default Home;

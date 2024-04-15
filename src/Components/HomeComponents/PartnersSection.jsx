@@ -1,10 +1,10 @@
 import React from 'react';
 
 const partners = [
-  { name: "VIP Response", imgSrc: "/client-1.jpg" },
-  { name: "Digital Media Solutions", imgSrc: "/client-3.jpg" },
-  { name: "Jenlin System", imgSrc: "/client-2.jpg" },
-  { name: "clickDealer", imgSrc: "/client-4.png" }
+  { name: "VIP Response", imgSrc: "/clients/client-1.jpg" },
+  { name: "Digital Media Solutions", imgSrc: "/clients/client-3.jpg" },
+  { name: "Jenlin System", imgSrc: "/clients/client-2.jpg" },
+  { name: "clickDealer", imgSrc: "/clients/client-4.png" }
 ];
 
 const PartnersSection = () => {
@@ -13,7 +13,7 @@ const PartnersSection = () => {
       <div className="container bg-black">
         <div className="row">
           <div className="col-12">
-            <div className="section-heading text-center wow fadeInUp" data-wow-delay="100ms">
+            <div className="section-heading text-center wow fadeInUp mb-3" data-wow-delay="100ms">
               <h2 style={{ marginLeft: "-1%" }}>Our Partners</h2>
             </div>
           </div>
@@ -22,7 +22,7 @@ const PartnersSection = () => {
         <div className="row">
           {/* Map through partners array */}
           {partners.map((partner, index) => (
-            <div key={index} className="col-md-6 col-xl-3 py-5">
+            <div key={index} className="col-md-6 col-xl-3 py-5 ">
               <div className="team-content-area text-center mb-30 wow fadeInUp" data-wow-delay={`${100 * (index + 1)}ms`}>
                 <div className="member-thumb mx-2 ">
                   <img src={partner.imgSrc} alt="clients" className="img-1 shadow rounded-5" style={{width:"250px"}} />

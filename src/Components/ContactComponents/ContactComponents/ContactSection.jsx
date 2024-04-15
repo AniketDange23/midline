@@ -28,7 +28,7 @@ const ContactSection = () => {
                 <textarea name="message" id="message" className="form-control border-0 rounded-0 box-shadow mb-5 py-3 px-4" placeholder="Your Message"></textarea>
               </div>
               <div className="col-12">
-                <button type="submit" value="send" className="btn btn-primary hover-ripple">send message</button>
+                <button type="submit" value="send" className="button">send message</button>
               </div>
             </form>
           </div>

@@ -1,23 +1,23 @@
 const AboutSection = () => {
   return (
-    <div className="container p-2 g-0">
+    <div className="container  g-0 mb-4">
       <div className="row justify-content-between align-items-center">
-      <div className="col-lg-5 m order-2">
-            <div className="feature-img-bg py-3 ">
+      <div className="col-lg-6   order-2">
+            <div className="feature-img-bg  ">
               <img
                 className="img-fluid rounded-5"
-                src="/h3.jpg"
+                src="/images/h3.jpg"
                 alt="feature-image"
-                style={{maxWidth:"500px"}}
+                style={{ maxWidth:"400px"}}
               />
             </div>
           </div>
-        <div className="col-md-6">
+        <div className="col-md-6 p-4">
           <span className="section-title-border"></span>
-          <p className="subtitle">About Us</p>
-          <h2 className="section-title">
+          <h5 className="subtitle">About Us</h5>
+          <h3 className="section-title">
             We Are Dynamic Team and Business Agency
-          </h2>
+          </h3>
           <p className="mb-5">
             We help pay per call and pay per click sector build robust
             practices and all businesses to enable their customers through our
@@ -38,8 +38,8 @@ const AboutSection = () => {
             media is spurred by the spirit of individuals who zeal for keeping
             us ahead of the rest, and constantly rise to the challenges.
           </p>
-          <a href="service.html" className="btn btn-primary hover-ripple">
-            more service
+          <a href="/services" className="button">
+            More Service
           </a>
         </div>
       </div>

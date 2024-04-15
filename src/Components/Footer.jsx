@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5 mb-5 mb-lg-0">
-              <a className="mb-4 d-inline-block LogoImage" href="#"><img className="img-fluid" src="/footerlogo.png" alt="" /></a>
+              <a className="mb-4 d-inline-block LogoImage" href="#"><img className="img-fluid" src="/logo.png" alt="" /></a>
               <p className="text-light">Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt ut
                 labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamaboris nisi ut aliquip.exea
                 commodo consequat. Duis aute irure dolor in reprehenderit.</p>
@@ -34,7 +34,7 @@ const Footer = () => {
               <div className="row">
                 <div className="col-6 mb-5">
                   <h4 className="text-white mb-4">Services</h4>
-                  <ul className="list-styled">
+                  <ul className="list-unstyled ">
                     <li className="mb-3 text-light" style={{ padding: "0" }}>
                     <a className="text-light d-block" href="/"><IoMdArrowDropright style={{ fontSize: "20px", marginRight: "2px" }} />Home</a></li>
                     <li className="mb-3 text-light" style={{ padding: "0" }}>
@@ -61,9 +61,9 @@ const Footer = () => {
                 <div className="col-12">
                   <h4 className="text-white mb-4">Contact Us</h4>
                   <form action="#">
-                    <div className="position-relative">
-                      <input type="email" className="form-control border-0 text-white newsletter-form" id="newsletter" name="newsletter" placeholder="Enter your email" />
-                      <button type="submit" className="btn btn-primary btn-subscribe">Subscribe</button>
+                    <div className="position-relative d-flex ">
+                      <input type="email" className="form-control border-0 text-white newsletter-form mx-3" name="newsletter" placeholder="Enter your email" />
+                      <button type="submit" className="button">Subscribe</button>
                     </div>
                   </form>
                 </div>

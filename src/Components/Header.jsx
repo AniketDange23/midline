@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaBars } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -47,9 +48,9 @@ const Header = () => {
           <a className="navbar-brand" href="/">
             <img
               className="img-fluid LogoImage"
-              src="/midlineLogo.jpg"
-              alt="Bexar"
-              style={{ width: "200px", mixBlendMode: "darken" }}
+              src="logo.png"
+              alt="midLine"
+              style={{ width: "180px", mixBlendMode: "darken" }}
             />
           </a>
           <button
@@ -60,7 +61,8 @@ const Header = () => {
             aria-expanded={!isNavCollapsed ? "true" : "false"}
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+          <FaBars />
+            
           </button>
 
           <div
@@ -82,12 +84,11 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            {/* search */}
-            <div className="search px-4 pb-3 pb-lg-0"></div>
-            {/* get start btn */}
-            <a href="/contact" className="btn btn-primary hover-ripple">
-              get started
-            </a>
+       
+            <button className="button"><a href="/contact" >
+              Get Started
+            </a></button>
+            
           </div>
         </nav>
       </div>
