@@ -33,7 +33,7 @@ const ServiceSection = () => {
           <input type="text" name="phone" id="phone" className="form-control form-control-sm border-0 rounded-0 box-shadow mb-3" placeholder="Phone" />
           <input type="text" name="subject" id="subject" className="form-control form-control-sm border-0 rounded-0 box-shadow mb-3" placeholder="Subject" />
           <textarea name="message" id="message" className="form-control form-control-sm border-0 rounded-0 box-shadow mb-3 py-3 px-4" placeholder="Your Message"></textarea>
-          <button type="submit" value="send" className="btn btn-primary">send message</button>
+          <button type="submit" value="send" className="button">send message</button>
         </form>
       </div>
     </aside>

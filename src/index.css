@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700|Open+Sans:300,400,600,700");
 body {
   line-height: 1.6;
@@ -16,32 +15,45 @@ body {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
-p, .paragraph {
+p,
+.paragraph {
   text-align: justify;
   font-weight: 400;
-  color: #000000;
-  line-height: 1.6;
+  color: #808080;
+  line-height: 1.5;
   font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #26589e !important ;
   text-transform: uppercase;
   font-weight: 600;
@@ -49,28 +61,38 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.2s ease;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 55px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 48px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 44px;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 22px;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 18px;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 16px;
+}
+span{
+  
+  text-align: justify!important;
 }
 .fixed-top {
   position: fixed;
@@ -79,7 +101,7 @@ h6, .h6 {
   right: 0;
   z-index: 1000; /* Ensure the navigation appears above other content */
 }
-a{
+a {
   color: white;
 }
 
@@ -121,8 +143,6 @@ a{
   padding: 5px 20px;
 }
 
-
-
 .btn-light:not(:disabled):not(.disabled).active,
 .btn-light:not(:disabled):not(.disabled):active,
 .show > .btn-light.dropdown-toggle {
@@ -131,20 +151,17 @@ a{
   color: #fff;
 }
 
-
-.button{
+.button {
   color: white;
   background: #26589e;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-
 }
-.button:hover{
+.button:hover {
   background: #193c6c;
-  color: #fff!important;
-  box-shadow:  3px 5px #2f6bbf;
-
+  color: #fff !important;
+  box-shadow: 3px 5px #2f6bbf;
 }
 .btn-arrow {
   transition: 0.2s ease;
@@ -182,13 +199,12 @@ a{
   background: #26589e;
 }
 /* bg */
-.bg-img{
+.bg-img {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -2;
   object-fit: cover;
-  
 }
 
 /* hover effect */
@@ -200,7 +216,7 @@ a{
 }
 .hover-ripple:hover::after {
   -webkit-animation: sonarEffect 1s ease-out 50ms;
-          animation: sonarEffect 1s ease-out 50ms;
+  animation: sonarEffect 1s ease-out 50ms;
 }
 .hover-ripple::after {
   pointer-events: none;
@@ -218,7 +234,7 @@ a{
 }
 .hover-ripple.ripple-white:hover::after {
   -webkit-animation: sonarEffectWhite 1s ease-out 50ms;
-          animation: sonarEffectWhite 1s ease-out 50ms;
+  animation: sonarEffectWhite 1s ease-out 50ms;
 }
 
 @-webkit-keyframes sonarEffect {
@@ -227,10 +243,12 @@ a{
   }
   40% {
     opacity: 0.3;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e, 0 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e,
+      0 0 0 10px rgba(255, 255, 255, 0.2);
   }
   100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e, 0 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e,
+      0 0 0 10px rgba(255, 255, 255, 0.2);
     transform: scale(1.2);
     opacity: 0;
   }
@@ -242,10 +260,12 @@ a{
   }
   40% {
     opacity: 0.3;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e, 0 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e,
+      0 0 0 10px rgba(255, 255, 255, 0.2);
   }
   100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e, 0 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e,
+      0 0 0 10px rgba(255, 255, 255, 0.2);
     transform: scale(1.2);
     opacity: 0;
   }
@@ -256,10 +276,12 @@ a{
   }
   40% {
     opacity: 0.3;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff, 0 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff,
+      0 0 0 10px rgba(255, 255, 255, 0.2);
   }
   100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff, 0 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff,
+      0 0 0 10px rgba(255, 255, 255, 0.2);
     transform: scale(1.2);
     opacity: 0;
   }
@@ -270,15 +292,16 @@ a{
   }
   40% {
     opacity: 0.3;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff, 0 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff,
+      0 0 0 10px rgba(255, 255, 255, 0.2);
   }
   100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff, 0 0 0 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff,
+      0 0 0 10px rgba(255, 255, 255, 0.2);
     transform: scale(1.2);
     opacity: 0;
   }
 }
-
 
 @-webkit-keyframes clockwise {
   to {
@@ -297,8 +320,6 @@ ul {
   list-style-type: none;
   margin: 0px;
 }
-
-
 
 a,
 button,
@@ -394,7 +415,7 @@ a.text-dark:hover {
 }
 
 .subtitle {
-  font: 800 1.5rem "Inter",sans-serif;
+  font: 800 1.5rem "Inter", sans-serif;
   color: #10105d;
 }
 
@@ -465,7 +486,6 @@ a.text-dark:hover {
 
 .bg-primary {
   background: #1a4380 !important;
-
 }
 
 .bg-secondary {
@@ -491,7 +511,6 @@ a.text-dark:hover {
 .bg-white2-gray {
   background-image: linear-gradient(to right, #fff 70%, #f5f6fa 0%);
 }
-
 
 .text-primary {
   color: #26589e !important;
@@ -579,6 +598,7 @@ a.text-dark:hover {
 
 .icon {
   font-size: 40px;
+  color: white;
 }
 
 .icon-sm {
@@ -638,7 +658,7 @@ a.text-dark:hover {
 /* icon animation */
 .icon-bg {
   position: relative;
-  background-color: #006aff8d;
+  background-color: #1d5db6;
   color: white;
   display: inline-block;
   height: 80px;
@@ -652,33 +672,34 @@ a.text-dark:hover {
   width: 100%;
   top: 0;
   left: 5px;
-  background: rgba(32, 40, 255, 0.299);
-  border-radius: 130px 120px 160px 130px;
+  /* background: rgba(129, 133, 245, 0.299); */
+  border-radius: 130px 120px 180px 130px;
 }
 .icon-bg .icon {
-  line-height: 100px;
+  line-height: 80px;
+  color: white;
 }
 
 .water-wave {
   position: relative;
   -webkit-animation-name: water-wave;
-          animation-name: water-wave;
+  animation-name: water-wave;
   -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 .water-wave::before {
   -webkit-animation-name: water-wave;
-          animation-name: water-wave;
+  animation-name: water-wave;
   -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 @-webkit-keyframes water-wave {
@@ -893,8 +914,6 @@ textarea.form-control-sm {
   transform: scale(1.2);
 }
 
-
-
 /* navigation */
 .navigation {
   box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.09);
@@ -996,11 +1015,9 @@ textarea.form-control-sm {
   }
 }
 
-
 .text-color:hover {
- color: #27279f;
+  color: #27279f;
 }
-
 
 /* /navigation */
 
@@ -1013,7 +1030,6 @@ textarea.form-control-sm {
     padding: 160px 0 170px;
   }
 }
-
 
 /* about */
 .image-bg {
@@ -1028,8 +1044,6 @@ textarea.form-control-sm {
   top: 0;
   right: 0;
 }
-
-
 
 @media (max-width: 991px) {
   .funfacts {
@@ -1124,12 +1138,14 @@ textarea.form-control-sm {
   transform: translateY(-200px);
 }
 .card{
-  padding: 10px 20px;
-border: none;
+  border: none;
+  transition: transform 0.5s;
 }
 
 .card:hover {
-  box-shadow:   5px  5px #1a478539;
+  border: 2px solid #26589e;
+  transform: scale(1.1);
+
 }
 
 .service-bg-dots {

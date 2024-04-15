@@ -5,16 +5,14 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 999;
   border-radius: 50%;
 }
 
 .whatsapp-btn {
-  margin: 5px;
 
   bottom: 140px; /* Adjust as needed */
   right: 20px; /* Adjust as needed */
-  margin: 15px 0;
 
   background-color: rgb(94, 214, 94); /* Adjust color */
   color: white;
@@ -30,7 +28,6 @@
 }
 
 .call-btn {
-  margin: 10px 0;
 
   bottom: 80px; /* Adjust as needed */
   right: 20px; /* Adjust as needed */
