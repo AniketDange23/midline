@@ -39,6 +39,8 @@ body {
     border-color: orange;
   }
 }
+
+
 p,
 .paragraph {
   text-align: justify;
@@ -927,9 +929,6 @@ textarea.form-control-sm {
   }
 }
 
-.navbar {
-  padding: 0;
-}
 .navbar-collapse {
   padding-bottom: 10px;
   transition: 0.2s ease;
@@ -1245,110 +1244,4 @@ textarea.form-control-sm {
 }
 .project-item:hover .hover-overlay a {
   transform: translateY(-50%) scale(1);
-}
-
-.hover-overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  text-align: center;
-  background: rgba(134, 195, 58, 0.9);
-  transition: 0.4s ease;
-  opacity: 0;
-}
-.hover-overlay a {
-  position: relative;
-  font-size: 46px;
-  color: #fff;
-  top: 50%;
-  transform: translateY(-50%) scale(0);
-  transition: 0.4s ease;
-  display: inline-block;
-}
-
-.uni-plus {
-  position: relative;
-  padding: 0 20px;
-}
-.uni-plus::before {
-  position: absolute;
-  content: "";
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 40px;
-  width: 2px;
-  background: #fff;
-}
-.uni-plus::after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 2px;
-  width: 40px;
-  background: #fff;
-}
-
-.filter-controls li {
-  cursor: pointer;
-}
-.filter-controls li.active {
-  color: #26589e !important;
-}
-
-/* /project */
-/* testimonial */
-.bg-dots {
-  position: relative;
-}
-.bg-dots::before {
-  position: absolute;
-  content: "";
-  background: url(../images/backgrounds/testimonial-bg-1.png);
-  top: 0px;
-  right: 0px;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 1;
-}
-.bg-dots .container {
-  position: relative;
-  z-index: 2;
-}
-
-.testimonial-slider .nextArrow,
-.testimonial-slider .prevArrow {
-  opacity: 0;
-  transition-delay: 1s;
-}
-.testimonial-slider:hover .nextArrow {
-  opacity: 1;
-  right: -100px;
-  transition-delay: 0s;
-}
-.testimonial-slider:hover .prevArrow {
-  opacity: 1;
-  left: -100px;
-  transition-delay: 0s;
-}
-
-.bg-quote {
-  position: relative;
-}
-.bg-quote::before {
-  position: absolute;
-  content: "\f10d";
-  font-family: "FontAwesome";
-  font-size: 150px;
-  color: rgba(134, 195, 58, 0.3);
-  top: -10px;
-  line-height: 1;
-  left: 50%;
-  transform: translateX(-50%);
 }

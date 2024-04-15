@@ -13,9 +13,9 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer>
+    <div>
       
-      <div className='section bg-secondary'>
+      <div className='py-5 px-2 bg-secondary'>
         <div className='container'>
           <div className='row justify-content-between'>
             <div className='col-lg-5 mb-5 mb-lg-0'>
@@ -143,7 +143,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='bg-secondary-darken py-4'>
+      <div className='bg-secondary-darken py-2'>
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 text-center text-md-left mb-3 mb-md-0'>
@@ -176,7 +176,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

@@ -40,12 +40,12 @@ const FactsSection = () => {
   }, []);
 
   return (
-    <div className='container-fluid bg-dark   mb-5  '>
+    <div className='container-fluid bg-dark   mb-5'>
       <div className='row  py-5 '>
         {factsData.map((fact, index) => (
           <div key={index} className='col-lg-3 col-sm-6 mb-3 mb-lg-0'>
-            <div className='d-flex align-content-center  justify-content-start px-5'>
-              {<fact.icon className='icon-lg  mr-3 ' />}
+            <div className='d-flex align-content-center  justify-content-center px-5'>
+              {<fact.icon className='icon-lg  mr-2' />}
               <div >
                 <h3>
                   <span className='count  text-white' data-count={fact.count}>

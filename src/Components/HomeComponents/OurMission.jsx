@@ -15,8 +15,8 @@ const serviceData = [
 
 const OurMission = () => {
   return (
-  <div className=" bg-gray p-5">
-     <div className='container '>
+  <div className=" bg-gray ">
+     <div className='container py-5 px-2'>
       
         <div className='row justify-content-center'>
           {serviceData.map((item, index) => (

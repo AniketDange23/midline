@@ -1,21 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { FaBars } from "react-icons/fa6";
+import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const [sticky, setSticky] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset;
-
-      // Change the threshold value as needed
-      if (scrollTop > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      window.scrollY > 50 ? setSticky(true) : setSticky(false);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -38,19 +31,15 @@ const Header = () => {
   ];
 
   return (
-    <div
-      className={`navigation bg-white position-relative ${
-        isScrolled ? "fixed-top" : ""
-      }`}
-    >
+    <div className={`navigation  bg-white ${sticky ? "fixed-top" : ""}`}>
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light bg-white ">
+        <nav className="navbar navbar-expand-lg navbar-light bg-white " >
           <a className="navbar-brand" href="/">
             <img
               className="img-fluid LogoImage"
               src="logo.png"
               alt="midLine"
-              style={{ width: "180px", mixBlendMode: "darken" }}
+              style={{ width: "150px", mixBlendMode: "darken" }}
             />
           </a>
           <button
@@ -61,14 +50,13 @@ const Header = () => {
             aria-expanded={!isNavCollapsed ? "true" : "false"}
             aria-label="Toggle navigation"
           >
-          <FaBars />
-            
+            <FaBars />
           </button>
 
           <div
             className={`collapse navbar-collapse text-center ${
               !isNavCollapsed ? "show" : ""
-            } pb-lg-0`}
+            }`}
             id="navigation"
           >
             <ul className="navbar-nav ml-auto">
@@ -84,11 +72,7 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-       
-            <button className="button"><a href="/contact" >
-              Get Started
-            </a></button>
-            
+            <button className="button"><a href="/contact"> Get's Stared</a></button>
           </div>
         </nav>
       </div>
