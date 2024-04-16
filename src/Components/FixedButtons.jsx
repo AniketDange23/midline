@@ -2,8 +2,7 @@
 import React, { useState } from 'react';
 import {  BsWhatsapp } from "react-icons/bs";
 import { HiArrowUp } from "react-icons/hi";
-import { TiPhone } from "react-icons/ti";
-import './FixedButtons.css'; // External CSS file for styling
+import { BiSolidPhoneCall } from "react-icons/bi";import './FixedButtons.css'; // External CSS file for styling
 
 const FixedButtons = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -51,7 +50,7 @@ const FixedButtons = () => {
       </button>
       {/* Call button */}
       <button className="fixed-btn call-btn" onClick={handleCallClick}>
-        <TiPhone/>
+        <BiSolidPhoneCall/>
       </button>
       {/* Back to top button */}
       {isVisible && (

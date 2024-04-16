@@ -2,13 +2,12 @@ import { useGlobalContext } from "./context";
 
 const PageHeader = () => {
 
-  const { title, subTitle } = useGlobalContext();
+  const { title, subTitle, banner } = useGlobalContext();
 
   return (
     <section
       className="section bg-cover overlay"
-      data-background="images/page-title.jpg"
-      style={{ backgroundImage: "url(/page-title.jpg)" }}
+      style={{ backgroundImage: `url(${banner})` }}
     >
       <div className="container">
         <div className="row">
@@ -18,7 +17,7 @@ const PageHeader = () => {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb bg-transparent p-0">
                 <li className="breadcrumb-item font-weight-semebold">
-                  <a className="text-white" href="#" style={{marginRight:"5px"}}>
+                  <a className="text-white" href="#" style={{ marginRight: "5px" }}>
                     Home <span>/</span>
                   </a>
 

@@ -7,6 +7,7 @@ const reducer = (state,action) => {
             ...state,
             title:action.payload.title,
             subTitle:action.payload.subTitle,
+            banner:action.payload.image,
         }
     }
     if(action.type ==="SERVICES_PAGE"){
@@ -15,6 +16,9 @@ const reducer = (state,action) => {
             ...state,
             title:action.payload.title,
             subTitle:action.payload.subTitle,
+            banner:action.payload.image,
+
+            
         }
     }
     if(action.type ==="ABOUT_PAGE"){
@@ -23,6 +27,8 @@ const reducer = (state,action) => {
             ...state,
             title:action.payload.title,
             subTitle:action.payload.subTitle,
+            banner:action.payload.image,
+
         }
     }
 
@@ -35,6 +41,8 @@ const reducer = (state,action) => {
             ...state,
             title:action.payload.title,
             subTitle:action.payload.subTitle,
+            banner:action.payload.image,
+
             para1:action.payload.para1,
             para2:action.payload.para2,
             image:action.payload.image

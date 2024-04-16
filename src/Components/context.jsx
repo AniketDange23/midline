@@ -8,6 +8,7 @@ const initialState = {
 
     title: "",
     subTitle: "",
+    banner:"",
 };
 
 
@@ -22,6 +23,7 @@ const AppProvider = ({ children }) => {
             payload: {
                 title: "CONTACT US",
                 subTitle: "Contact Us",
+                image:"./images/g3.jpeg"
             }
         })
     }
@@ -32,6 +34,8 @@ const AppProvider = ({ children }) => {
             payload: {
                 title: "ABOUT ",
                 subTitle: "About",
+                image:"./images/g8.jpg"
+
             }
         })
     }
@@ -43,6 +47,8 @@ const AppProvider = ({ children }) => {
             payload: {
                 title: "SERVICES ",
                 subTitle: "Services",
+                image:"./images/g7.jpg"
+
             }
         })
     }

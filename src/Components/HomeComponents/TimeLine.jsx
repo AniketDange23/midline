@@ -1,100 +1,89 @@
-import './TimeLine.css'
-import { FaEarthAsia } from "react-icons/fa6";
+import React from 'react';
+import './TimeLine.css';
+
+// Define a TimelineItem component to render each item in the timeline
+const TimelineItem = ({ title, items, index }) => (
+  <div className={`tl-container ${index % 2 === 0 ? 'tl-left' : 'tl-right'}`}>
+    <div className="tl-content  ">
+      <h5 className=" ">{title}</h5>
+      <ul>
+        {items.map((item, i) => (
+          <li key={i}  style={{marginLeft:"-25px"}}>{item}</li>
+        ))}
+      </ul>
+    </div>
+  </div>
+);
+
+// Define the array of timeline data
 const timelineData = [
   {
-    icon: 1,
-    title: "Empathetic Engagement",
-    description: [
-      "Understand Prospect Needs",
-      "Active Listening",
-      "Building Trust",
-      "Personalized Approach"
+    title: "Meeting & Research",
+    items: [
+      "Expert Assistance",
+      "Efficient Operations",
+      "Latest Technology",
+      "Effective Workflows"
     ]
   },
   {
-    icon: 2,
-    title: "Strategic Scripting",
-    description: [
-      "Crafting Conversational Scripts",
-      "Highlighting Key Points",
-      "Ensuring Clarity",
-      "Fluid Conversation Flow"
+    title: "Design & Development",
+    items: [
+      "Start Design with Client",
+      "List Required Content Submission Content & Photo",
+      "Home Pages Design & Home Page Review & Feedback",
+      "Pages Design & Inner Pages Review & Feedback",
+      "Frontend & Backend Coding",
+      "Content Uploading"
     ]
   },
   {
-    icon: 3,
-    title: "Personalized Outreach",
-    description: [
-      "Tailoring Solutions",
-      "Addressing Specific Needs",
-      "Showing Genuine Interest",
-      "Connecting on a Human Level"
+    title: "QA Testing",
+    items: [
+      "Cross Browser & Device testing",
+      "Code Validation Testing",
+      "Testing Review & Feedback",
+      "Refinement Final Approval"
     ]
   },
   {
-    icon: 4,
-    title: "Continuous Training and Development",
-    description: [
-      "Ongoing Learning",
-      "Adopting Latest Techniques",
-      "Industry Insights",
-      "Skill Enhancement"
+    title: "SEO Friendly Update",
+    items: [
+      "Webpages Speed Optimization",
+      "Onpage SEO Optimization",
+      "Generate Sitemap"
     ]
   },
   {
-    icon: 5,
-    title: "Data-Driven Insights",
-    description: [
-      "Analyzing Metrics",
-      "Call-to-Conversion Rates",
-      "Prospect Feedback",
-      "Optimization Strategies"
+    title: "Launch",
+    items: [
+      "Upload On Server",
+      "Testing On Live Environment",
+      "Backend Training"
     ]
   },
   {
-    icon: 6,
-    title: "Transparent Communication",
-    description: [
-      "Honesty and Integrity",
-      "Keeping Clients Informed",
-      "Progress Updates",
-      "Collaborative Partnership"
+    title: "24/7 Services",
+    items: [
+      "Round-the-Clock Availability",
+      "Rapid Response Time",
+      "Expert Assistance",
+      "Flexibility and Convenience"
     ]
   }
 ];
 
-const Timeline = () => {
-  return (
-    <div className="bg">
-      <div className="container mt-5">
-        <h2 className="text-center">Our Process</h2>
-        <div className="row py-5">
-          <div className="col-md-12">
-            <div className="main-timeline">
-              {timelineData.map((item, index) => (
-                <div key={index} className="timeline">
-                  <a href="#" className="timeline-content">
-                    <div className="timeline-icon">
-                      <i>{item.icon}</i>
-                    </div>
-                    <h3 className="title">{item.title}</h3>
-                    <p className="description">
-                      {item.description.map((desc, idx) => (
-                        <span key={idx}>
-                          {idx + 1}. {desc}
-                          <br />
-                        </span>
-                      ))}
-                    </p>
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+// Define a Timeline component to render the entire timeline
+const Timeline = () => (
+  <div className='py-5'>
+    <h3 className='text-center mb-2'>Our Process</h3>
+<div className="tl py-5">
+    {timelineData.map((item, index) => (
+      <TimelineItem key={index} index={index} title={item.title} items={item.items} />
+    ))}
+  </div>
+  </div>
+  
+);
 
 export default Timeline;

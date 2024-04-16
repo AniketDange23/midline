@@ -1,9 +1,12 @@
-import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
+import { MdPhoneInTalk } from "react-icons/md"; 
+
+
 
 const ContactInfo = () => {
   const contactInfoData = [
     { icon: <FaMapMarkerAlt />, title: 'Our Address', items: ['Opposite Bank of Baroda, Ward Number 3, Parsodi, Trimurtee Nagar, Nagpur, Maharashtra 440022'] },
-    { icon: <FaPhone />, title: 'Phone Number', items: ['+91 8668681466', '+91 8956101181']},
+    { icon: <MdPhoneInTalk />, title: 'Phone Number', items: ['+91 8668681466', '+91 8956101181']},
     { icon: <FaEnvelope />, title: 'Message Us', items: ['info@elioratechno', 'sales@elioratechno.com'] }
   ];
 

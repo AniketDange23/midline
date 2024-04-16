@@ -25,7 +25,7 @@ const TopBar = () => {
               </li>
               <li className="list-inline-item mx-0">
                 <a className="text-white d-inline-block px-lg-3 px-2" href="callto:+91 8956101181">
-                  Call Us Now: <span className="text-primary">+91 8956101181</span>
+                  Call Us Now: <span className="">+91 8956101181</span>
                 </a>
               </li>
             </ul>

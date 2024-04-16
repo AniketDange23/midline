@@ -6,8 +6,16 @@ const ContactSection = () => {
           {/* google map */}
           <div className="col-md-5 mb-5 mb-md-0">
             <div id="map_canvas" style={{position: 'relative', overflow: 'hidden'}}>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.918221444872!2d79.03522421083777!3d21.11582628047427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c105be93e64b%3A0x633455db6ed2def4!2sELIORA%20TECHNOLOGY%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1712573514770!5m2!1sen!2sin" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            <iframe
+        title="Google Maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14887.664760208734!2d79.03100019329301!3d21.115907255891358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9fc666f94677e53%3A0x325fefc473b236c3!2sMidline%20Media%20Solution!5e0!3m2!1sen!2sin!4v1713257898460!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>            </div>
           </div>
           <div className="col-md-7">
             <h3 className="section-title">Contact Form</h3>

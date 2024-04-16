@@ -2,8 +2,8 @@ const OurServices = () => {
   return (
     <div className='container  g-0  my-5'>
       <div>
-        <h4 className='text-center mb-4 px-2'>Our Services</h4>
-        <h3 className=' mb-4 px-2'>What We Offer</h3>
+        <h3 className='text-center mb-4 px-2'>Our Services</h3>
+        <h4  className=' mb-4  text-center px-2'>What We Offer</h4>
       </div>
       <div className='row'>
         <div className='col-lg-6 o order-lg-1  align-content-center text-center justify-content-center'>

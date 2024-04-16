@@ -6,7 +6,7 @@ const AboutSection = () => {
           <div className="feature-img-bg box-shadow  ">
             <img
               className="img-fluid"
-              src="/images/h1.jpg"
+              src="/images/h3.jpg"
               alt="feature-image"
               style={{minHeight:"300px"}}
             />
@@ -22,7 +22,7 @@ We are one of the quality call canter management companies in India that has bee
             <p className="mb-4">
               Headquartered in Nagpur and operating across Asia and America, we are one of India’s most promising call center and digital marketing players, handling a large number of transactions daily.
             </p>
-            <a href="#about-us" className="button">
+            <a href="/services" className="button">
               More Services
             </a>
           </div>

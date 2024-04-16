@@ -9,12 +9,11 @@ const partners = [
 
 const PartnersSection = () => {
   return (
-    <section className="our-team-area section-padding-80-50 ">
-      <div className="container bg-black">
+      <div className="container py-4">
         <div className="row">
           <div className="col-12">
             <div className="section-heading text-center wow fadeInUp mb-3" data-wow-delay="100ms">
-              <h2 style={{ marginLeft: "-1%" }}>Our Partners</h2>
+              <h3 style={{ marginLeft: "-1%" }}>Our  Partners</h3>
             </div>
           </div>
         </div>
@@ -33,7 +32,6 @@ const PartnersSection = () => {
           ))}
         </div>
       </div>
-    </section>
   );
 }
 
