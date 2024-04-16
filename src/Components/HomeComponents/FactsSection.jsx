@@ -38,38 +38,37 @@ const FactsSection = () => {
   }, []);
 
   return (
-    <div className='container-fluid bg-dark mb-5'>
-      <div className='row justify-content-center align-content-center py-5'>
+    <div className='container-fluid bg-dark '>
+      <div className='row justify-content-center align-items-center '>
 
-        <div className="col-lg-3   mb-4 mb-lg-0">
-          <div className="   align-content-center text-center">
-            <img className="img-fluid" src="/CEO.png" alt="CEO" style={{ width: "300px" }} />
-            <h4 >Mr. Komal Kumbhare</h4>
-            <h5 >Founder & CEO</h5>
-            <p className="text-center text-white">Midline media solution</p>
+        <div className="col-lg-3 mb-4 mb-lg-0">
+          <div className="text-center">
+            <img className="img-fluid" src="/CEO.png" alt="CEO" style={{ maxWidth: "100%", height: "auto" }} />
+            <h4>Mr. Komal Kumbhare</h4>
+            <h5>Founder & CEO</h5>
+            <p className="text-white">Midline media solution</p>
           </div>
         </div>
 
         <div className="col-lg-6">
-  <div className="row justify-content-center  align-content-center py-5">
-    {factsData.map((fact, index) => (
-      <div key={index} className='col-lg-6 col-md-6  mb-3 mb-lg-0 p-3'>
-        <div className='d-flex align-items-center shadow p-3' >
-          {React.createElement(fact.icon, { className: 'icon-lg text-primary align-content-center mr-3' })}
-          <div style={{ textAlign: "justify" }}>
-            <h3>
-              <span className='count text-white' data-count={fact.count}>
-                0
-              </span>
-            </h3>
-            <b className='fw-bold'>{fact.text}</b>
+          <div className="row justify-content-center align-items-center py-4">
+            {factsData.map((fact, index) => (
+              <div key={index} className='col-lg-6 col-md-6 mb-3'>
+                <div className='d-flex align-items-center shadow p-3'>
+                  {React.createElement(fact.icon, { className: 'icon-lg text-primary mr-3' })}
+                  <div style={{ textAlign: "justify" }}>
+                    <h3>
+                      <span className='count text-white' data-count={fact.count}>
+                        0
+                      </span>
+                    </h3>
+                    <b className='fw-bold text-white'>{fact.text}</b>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      </div>
-    ))}
-  </div>
-</div>
-
 
       </div>
     </div>
