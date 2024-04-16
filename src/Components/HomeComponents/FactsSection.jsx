@@ -41,12 +41,12 @@ const FactsSection = () => {
 
   return (
     <div className='container-fluid bg-dark   mb-5'>
-      <div className='row  py-5 '>
+      <div className='row  p-4 d-flex justify-content-center align-content-center'>
         {factsData.map((fact, index) => (
-          <div key={index} className='col-lg-3 col-sm-6 mb-3 mb-lg-0'>
-            <div className='d-flex align-content-center  justify-content-center px-5'>
-              {<fact.icon className='icon-lg  mr-2' />}
-              <div >
+          <div key={index} className='col-lg-3 col-sm-6 mb-3 mb-lg-0 '>
+            <div className='d-flex align-content-center   '>
+              {<fact.icon className='icon-lg align-content-center  mr-2' />}
+              <div  style={{textAlign:"justify"}} >
                 <h3>
                   <span className='count  text-white' data-count={fact.count}>
                     0{" "}
