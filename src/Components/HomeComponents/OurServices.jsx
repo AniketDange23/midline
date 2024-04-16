@@ -3,22 +3,22 @@ const OurServices = () => {
     <div className='container  g-0  my-5'>
       <div>
         <h4 className='text-center mb-4 px-2'>Our Services</h4>
-        <h2 className='text-center mb-4 px-2'>What We Offer</h2>
+        <h3 className=' mb-4 px-2'>What We Offer</h3>
       </div>
       <div className='row'>
         <div className='col-lg-6 o order-lg-1  align-content-center text-center justify-content-center'>
           <ul className='list-unstyled'>
-            <li className='d-flex align-items-center mb-5'>
               <div style={{ textAlign: "justify" }}>
                 <h4>Cold Calling</h4>
+               <p>
                 Cold calling is a technique we use where a salesperson contacts
                 individuals or businesses who have not previously expressed
                 interest in the product or service. The term "cold" refers to
                 the fact that the salesperson has no prior relationship with the
                 prospect and is initiating contact without any warm introduction
                 or existing connection.
+               </p> 
               </div>
-            </li>
             <li className='d-flex align-items-center mb-5'>
               <div style={{ textAlign: "justify" }}>
                 <h4>Appointment setting</h4>
@@ -61,14 +61,15 @@ const OurServices = () => {
         <div className='col-lg-6 pr-lg-0 order-lg-2 order-1 mb-5 mb-lg-0'>
           <ul className='list-unstyled'>
             <li className='d-flex align-items-center mb-5'>
-              <div className='text-center mr-4'></div>
+              <div className='text-center mb-2'></div>
               <div style={{ textAlign: "justify" }}>
-                <h4>Lead Generation</h4>Lead generation is the process of
+                <h4>Lead Generation</h4>
+              <p> Lead generation is the process of
                 identifying and attracting potential customers, or "leads," who
                 have shown interest in a company's products or services. The
                 goal of lead generation is to gather contact information and
                 other relevant details about individuals or organizations that
-                are likely to become customers..
+                are likely to become customers.</p> 
                 <li> - Content Marketing</li>
                 <li>- Social Media Marketing</li>
                 <li>- Search Engine Optimization (SEO)</li>
@@ -78,7 +79,7 @@ const OurServices = () => {
               </div>
             </li>
             <li className='d-flex align-items-center mb-5'>
-              <div className='text-center mr-4'></div>
+              <div className='text-center md-2'></div>
               <div style={{ textAlign: "justify" }}>
                 <h4>Customer service </h4>
                 <span>

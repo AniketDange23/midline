@@ -1002,11 +1002,12 @@ textarea.form-control-sm {
 }
 .card{
   border: none;
+  padding: 10px;
   transition: transform 0.5s;
 }
 
 .card:hover {
-box-shadow: 5px 5px #1D5DB6;
+box-shadow: 5px 5px #afd0ff;
 }
 
 .service-bg-dots {
