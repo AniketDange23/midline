@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 const serviceData = [
@@ -15,24 +14,20 @@ const serviceData = [
 
 const OurMission = () => {
   return (
-  <div className=" bg-gray ">
-     <div className='container py-5 '>
-      
-        <div className='row justify-content-center'>
+    <div className="bg-gray">
+      <div className="container py-5">
+        <div className="row justify-content-center">
           {serviceData.map((item, index) => (
-            <div key={index} className='col-xl-6 col-lg-4 col-sm-6 mb-4 '>
-              <div className='bg-white py-5 px-4 text-center  shadow transition hover-bg-dark'>
-                
-                <h4 className='mb-4'>{item.title}</h4>
+            <div key={index} className="col-xl-6 col-lg-6 col-md-6 mb-4">
+              <div className="bg-white h-100 py-5 px-4 text-center shadow transition hover-bg-dark">
+                <h4 className="mb-4">{item.title}</h4>
                 <p style={{ textAlign: "justify" }}>{item.description}</p>
               </div>
             </div>
           ))}
         </div>
-        </div>
-  </div>
-     
-
+      </div>
+    </div>
   );
 };
 
