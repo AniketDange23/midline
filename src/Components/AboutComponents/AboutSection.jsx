@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <div className="container mb-5 p-5">
+    <div className="container mb-5 py-5">
       <div className="row">
         <div className="col-lg-6 order-lg-1 order-2 d-flex align-items-center justify-content-center">
           <div className="feature-img-bg box-shadow  ">

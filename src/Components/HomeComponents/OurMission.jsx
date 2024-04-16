@@ -21,7 +21,7 @@ const OurMission = () => {
         <div className='row justify-content-center'>
           {serviceData.map((item, index) => (
             <div key={index} className='col-xl-6 col-lg-4 col-sm-6 mb-4 '>
-              <div className='bg-white py-5 px-4 text-center  box-shadow transition hover-bg-dark'>
+              <div className='bg-white py-5 px-4 text-center  shadow transition hover-bg-dark'>
                 
                 <h4 className='mb-4'>{item.title}</h4>
                 <p style={{ textAlign: "justify" }}>{item.description}</p>

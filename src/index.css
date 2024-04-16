@@ -1006,9 +1006,7 @@ textarea.form-control-sm {
 }
 
 .card:hover {
-  border: 2px solid #26589e;
-  transform: scale(1.1);
-
+box-shadow: 5px 5px #1D5DB6;
 }
 
 .service-bg-dots {

@@ -73,7 +73,7 @@ const Header = () => {
               ))}
             </ul>
           
-            <button className="button "><a href="/contact"> Get's Stared</a></button>
+            <button className="button mx-3 "><a href="/contact"> Get's Stared</a></button>
           </div>
         </nav>
       </div>

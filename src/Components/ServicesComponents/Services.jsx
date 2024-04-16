@@ -32,12 +32,10 @@ const serviceData = [
 
 const Services = () => {
   return (
-    <section className="section bg-gray service-bg-dots">
-      <div className="container">
+      <div className="container-fluid  bg-gray">
         <div className="row">
           <div className="col-12 text-center">
-            <div className="section-title-border border-center"></div>
-            <h2 className="section-title">Best Services We Provide</h2>
+            <h3 className="py-5">Best Services We Provide</h3>
           </div>
         </div>
         <div className="row">
@@ -55,7 +53,6 @@ const Services = () => {
           ))}
         </div>
       </div>
-    </section>
   );
 };
 

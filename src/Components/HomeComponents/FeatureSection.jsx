@@ -8,10 +8,10 @@ const data = [
 
 const Home = () => {
   return (
-    <div className='container-fluid px- g-0 '>
+    <div className='container-fluid  g-0 '>
       <div className='row align-content-center justify-content-center '>
-        <div className='col-lg-5  align-content-center justify-content-center'>
-          <h3 className="mb-3" style={{textAlign:"justify"}}>Welcome to MIDLINE Media Solution</h3>
+        <div className='col-lg-5 py-5 align-content-center justify-content-center'>
+          <h3 className="mb-3" >Welcome to MIDLINE Media Solution</h3>
           <p >
             Midline media solution founded in 2020. Over the years, we have
             grown into a versatile and forward-thinking organization, dedicated
@@ -23,7 +23,7 @@ const Home = () => {
           <br />
           <button className="button"> <a href="/services">Know More</a> </button>
         </div>
-        <div className="col-lg-5 py-2 align-content-center  d-flex flex-wrap">
+        <div className="col-lg-6 col-md-8 py-2 align-content-center  d-flex flex-wrap">
           {data.map((item, index) => (
             <div className="col-lg-6  " key={index}>
               <div className="card  p-3 my-2">
