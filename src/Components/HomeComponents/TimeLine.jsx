@@ -1,89 +1,101 @@
 import React from 'react';
-import './TimeLine.css';
+import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+import './TimeLine.css'; // assuming you have your CSS file for styling
+import { AiOutlineFileSearch } from "react-icons/ai";
+import { RiFileTextFill } from "react-icons/ri";
+import { AiOutlinePhone } from "react-icons/ai";
+import { FaRegHandshake } from "react-icons/fa";
+import { IoIosRocket } from "react-icons/io";
+import { AiOutlineExclamationCircle } from "react-icons/ai";
+import { AiFillStar } from "react-icons/ai";
+import { AiOutlineProfile } from "react-icons/ai";
+import { AiOutlineCheckCircle } from "react-icons/ai";
+import { AiOutlineQuestionCircle } from "react-icons/ai";
+import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMessage } from "react-icons/ai";
 
-// Define a TimelineItem component to render each item in the timeline
-const TimelineItem = ({ title, items, index }) => (
-  <div className={`tl-container ${index % 2 === 0 ? 'tl-left' : 'tl-right'}`}>
-    <div className="tl-content  ">
-      <h5 className=" ">{title}</h5>
-      <ul>
-        {items.map((item, i) => (
-          <li key={i}  style={{marginLeft:"-25px"}}>{item}</li>
-        ))}
-      </ul>
-    </div>
-  </div>
-);
-
-// Define the array of timeline data
 const timelineData = [
   {
-    title: "Meeting & Research",
-    items: [
-      "Expert Assistance",
-      "Efficient Operations",
-      "Latest Technology",
-      "Effective Workflows"
-    ]
+    "title": "Research",
+    "icon": <AiOutlineFileSearch />,
+    "description": "Identify potential clients and their industries. Gather information about their needs and pain points."
   },
   {
-    title: "Design & Development",
-    items: [
-      "Start Design with Client",
-      "List Required Content Submission Content & Photo",
-      "Home Pages Design & Home Page Review & Feedback",
-      "Pages Design & Inner Pages Review & Feedback",
-      "Frontend & Backend Coding",
-      "Content Uploading"
-    ]
+    "title": "Script Development",
+    "icon": <RiFileTextFill />,
+    "description": "Create a conversational script with key talking points. Customize the script to resonate with different types of businesses."
   },
   {
-    title: "QA Testing",
-    items: [
-      "Cross Browser & Device testing",
-      "Code Validation Testing",
-      "Testing Review & Feedback",
-      "Refinement Final Approval"
-    ]
+    "title": "Introduction Call",
+    "icon": <AiOutlinePhone />,
+    "description": "Make the first call to introduce yourself and your services. Keep the conversation friendly and brief to pique interest."
   },
   {
-    title: "SEO Friendly Update",
-    items: [
-      "Webpages Speed Optimization",
-      "Onpage SEO Optimization",
-      "Generate Sitemap"
-    ]
+    "title": "Qualification and Needs Assessment",
+    "icon": <FaRegHandshake />,
+    "description": "Engage the prospect in conversation to understand their specific needs. Qualify leads based on their level of interest and fit for your services."
   },
   {
-    title: "Launch",
-    items: [
-      "Upload On Server",
-      "Testing On Live Environment",
-      "Backend Training"
-    ]
+    "title": "Tailored Pitch",
+    "icon": <IoIosRocket />,
+    "description": "Present your services as solutions to the prospect’s pain points. Highlight benefits relevant to their business goals."
   },
   {
-    title: "24/7 Services",
-    items: [
-      "Round-the-Clock Availability",
-      "Rapid Response Time",
-      "Expert Assistance",
-      "Flexibility and Convenience"
-    ]
+    "title": "Demonstration (if applicable)",
+    "icon": <AiOutlineExclamationCircle />,
+    "description": "Offer a live demo or provide examples to showcase the effectiveness of your services."
+  },
+  {
+    "title": "Address Concerns",
+    "icon": <AiFillStar />,
+    "description": "Listen actively to objections and address them with empathy. Provide relevant examples or testimonials to build credibility."
+  },
+  {
+    "title": "Establish Trust",
+    "icon": <AiOutlineProfile />,
+    "description": "Share success stories or case studies to demonstrate past results. Offer a satisfaction guarantee or trial period to alleviate concerns."
+  },
+  {
+    "title": "Proposal Delivery",
+    "icon": <AiOutlineCheckCircle />,
+    "description": "Present a tailored proposal outlining the services, pricing, and timeline. Clearly communicate the next steps for moving forward."
+  },
+  {
+    "title": "Overcome Final Hurdles",
+    "icon": <AiOutlineQuestionCircle />,
+    "description": "Handle any remaining objections or negotiation points with confidence. Ask for the sale and confirm their commitment to moving forward."
+  },
+  {
+    "title": "Thank You",
+    "icon": <AiOutlineMail />,
+    "description": "Send a personalized thank-you email or note after the call. Express gratitude for their time and interest in your services."
+  },
+  {
+    "title": "Post-Sale Support",
+    "icon": <AiOutlineMessage />,
+    "description": "Provide ongoing support and assistance to ensure a smooth transition. Stay in touch to nurture the relationship and explore future opportunities."
   }
 ];
 
-// Define a Timeline component to render the entire timeline
-const Timeline = () => (
-  <div className='py-5'>
-    <h3 className='text-center mb-2'>Our Process</h3>
-<div className="tl py-5">
-    {timelineData.map((item, index) => (
-      <TimelineItem key={index} index={index} title={item.title} items={item.items} />
-    ))}
-  </div>
-  </div>
-  
-);
+const TimeLine = () => {
+  return (
+    <VerticalTimeline>
+      {timelineData.map((item, index) => (
+        <VerticalTimelineElement
+          key={index}
+          className={`vertical-timeline-element--${item.type}`}
+          contentStyle={{ background: '#f9f9f9', color: '#000' }}
+          contentArrowStyle={{ borderRight: '7px solid #f9f9f9' }}
+          iconStyle={{ background: '#007bff', color: '#fff' }} // assuming blue color for all icons
+          icon={item.icon} // Using the icon from the timelineData array
+        >
+          <h4 className="vertical-timeline-element-title">{item.title}</h4>
+          <p>{item.description}</p>
+        </VerticalTimelineElement>
+      ))}
+    </VerticalTimeline>
+  );
+};
 
-export default Timeline;
+export default TimeLine;

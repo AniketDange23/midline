@@ -27,9 +27,9 @@ const data = [
 
 const Home = () => {
   return (
-    <div className='container-fluid  g-0 '>
+    <div className='container-fluid  '>
       <div className='row align-content-center justify-content-center '>
-        <div className='col-lg-5 py-5 align-content-center justify-content-center'>
+        <div className='col-lg-5 py-3 px-3 align-content-center justify-content-center'>
           <h3 className='mb-3'>Welcome to MIDLINE Media Solution</h3>
           <p>
             Midline media solution founded in 2020. Over the years, we have
