@@ -1,0 +1,72 @@
+.navbar-dark .navbar-nav .nav-link {
+    display: flex;
+    gap: 20px;
+ 
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    margin-left: 25px;
+    padding: 20px;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(33, 75, 152);
+}
+
+.dark-nav {
+    background-color: #fff;
+}
+
+.navbar-dark .navbar-brand img {
+    width: 150px; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    color: #FFFFFF;
+}
+
+@media (max-width: 991.98px) {
+    .sticky-top.navbar-dark {
+        position: relative;
+        background: #FFFFFF;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-dark {
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+        z-index: 999;
+    }
+    
+    .sticky-top.navbar-dark {
+        position: fixed;
+        background: #FFFFFF;
+    }
+
+    .navbar-dark .navbar-nav .nav-link::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 2px;
+        bottom: -1px;
+        left: 50%;
+        background: rgb(21, 23, 132);
+        transition: 0.5s;
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover::before,
+    .navbar-dark .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+
+    .navbar-dark .navbar-nav .nav-link.nav-contact::before {
+        display: none;
+    }
+}

@@ -916,110 +916,16 @@ textarea.form-control-sm {
   transform: scale(1.2);
 }
 
-/* navigation */
 .navigation {
   box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.09);
   position: relative;
   z-index: 1;
 }
-@media (min-width: 992px) {
-  .navigation {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.navbar-collapse {
-  padding-bottom: 10px;
-  transition: 0.2s ease;
-}
-.navbar .nav-item .nav-link {
-  text-transform: uppercase;
-  font-weight: 700;
-}
-.navbar .dropdown:hover .dropdown-menu {
-  visibility: visible;
-  opacity: 1;
-  transform: scaleX(1);
-}
-.navbar .dropdown-menu {
-  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
-  padding: 15px;
-  border: 0;
-  top: 100px;
-  left: -25px;
-  border-radius: 0;
-  display: block;
-  visibility: hidden;
-  transition: 0.3s ease;
-  opacity: 0;
-  transform: scale(0.8);
-  background: #fff;
-}
-@media (max-width: 991px) {
-  .navbar .dropdown-menu {
-    display: none;
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-    transform-origin: unset;
-  }
-}
-.navbar .dropdown-menu.show {
-  visibility: hidden;
-}
-@media (max-width: 991px) {
-  .navbar .dropdown-menu.show {
-    visibility: visible;
-    display: block;
-  }
-}
-.navbar .dropdown-item {
-  position: relative;
-  color: #172231;
-  transition: 0.2s ease;
-  font-family: "Open Sans", sans-serif;
-}
-@media (max-width: 991px) {
-  .navbar .dropdown-item {
-    text-align: center;
-  }
-}
-.navbar .dropdown-item:not(:last-child) {
-  margin-bottom: 10px;
-}
-.navbar .dropdown-item:hover {
-  color: #26589e;
-  background: transparent;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #172231;
-}
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #24127d;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-  padding: 40px 15px;
-}
-@media (max-width: 1200px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 40px 10px;
-  }
-}
-@media (max-width: 991px) {
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 10px;
-  }
-}
 
 .text-color:hover {
   color: #27279f;
 }
-
-/* /navigation */
-
+.nav
 /* hero slider */
 .hero-section {
   padding: 160px 0 270px;
@@ -1091,48 +997,6 @@ textarea.form-control-sm {
   }
 }
 
-/* /funfacts */
-/* feature */
-.feature-img-bg {
-  position: relative;
-}
-.feature-img-bg::before {
-  position: absolute;
-  content: "";
-  background: url(../images/backgrounds/feature-bg.png);
-  top: -100px;
-  right: -120px;
-  height: 150%;
-  width: 120%;
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-@media (max-width: 991px) {
-  .feature-img-bg::before {
-    display: none;
-  }
-}
-
-.play-video {
-  position: absolute;
-  left: 0;
-  bottom: 20%;
-}
-
-.play-icon {
-  display: inline-block;
-  min-width: 90px;
-  height: 90px;
-  text-align: center;
-  line-height: 90px;
-  border-radius: 50%;
-  box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1);
-  font-size: 30px;
-}
-
-/* /feature */
-/* service */
 .service-wrapper {
   transform: translateY(-200px);
 }
@@ -1163,68 +1027,6 @@ textarea.form-control-sm {
   z-index: 0;
 }
 
-/* /service */
-/* team */
-.team-member-img img {
-  position: relative;
-  z-index: 2;
-}
-.team-member-img::before {
-  position: absolute;
-  content: "";
-  background: url(../images/backgrounds/team-member-bg.png);
-  top: 0px;
-  right: 0px;
-  height: 60%;
-  width: 60%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 1;
-  transition: 0.2s ease;
-}
-.team-member-img::after {
-  position: absolute;
-  content: "";
-  background: url(../images/backgrounds/team-member-bg.png);
-  bottom: -40px;
-  left: 0px;
-  height: 60%;
-  width: 60%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 1;
-  transition: 0.2s ease;
-}
-.team-member:hover .team-member-img::before {
-  top: -20px;
-  right: -20px;
-}
-.team-member:hover .team-member-img::after {
-  bottom: -60px;
-  left: -20px;
-}
-.team-member:hover .hover-icon {
-  transform: scale(1);
-  opacity: 1;
-}
-.team-member:hover .hover-icon .social-icon a {
-  transform: scale(1);
-}
-
-.hover-icon {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(134, 195, 58, 0.9);
-  transition: 0.2s ease;
-  transform: scale(0.8);
-  z-index: 3;
-  opacity: 0;
-}
-.hover-icon .social-icon a {
-  transform: scale(0);
-}
 
 /* /team */
 /* project */

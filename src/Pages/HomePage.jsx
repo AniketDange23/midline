@@ -16,7 +16,7 @@ const HomePage = () => {
     <OurMission/>
     <Timeline/>
     <FactsSection/>
-    <PartnersSection/>
+    <PartnersSection/> 
     </div>
   )
 }

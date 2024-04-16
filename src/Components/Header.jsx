@@ -31,9 +31,9 @@ const Header = () => {
   ];
 
   return (
-    <div className={`navigation  bg-white ${sticky ? "fixed-top" : ""}`}>
+    <div className={`navigation  bg-white  ${sticky ? "fixed-top" : ""}`}>
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light bg-white " >
+        <nav className="navbar navbar-expand-lg navbar-light  bg-white " >
           <a className="navbar-brand" href="/">
             <img
               className="img-fluid LogoImage"
@@ -72,7 +72,8 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <button className="button"><a href="/contact"> Get's Stared</a></button>
+          
+            <button className="button "><a href="/contact"> Get's Stared</a></button>
           </div>
         </nav>
       </div>
