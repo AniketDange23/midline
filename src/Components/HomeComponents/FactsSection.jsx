@@ -39,14 +39,13 @@ const FactsSection = () => {
 
   return (
     <div className='container-fluid bg-dark '>
-      <div className='row justify-content-center align-items-center '>
-
+      <div className='row justify-content-center g-0 align-items-center '>
         <div className="col-lg-3 mb-4 mb-lg-0">
           <div className="text-center">
             <img className="img-fluid" src="/CEO.png" alt="CEO" style={{ maxWidth: "100%", height: "auto" }} />
             <h4>Mr. Komal Kumbhare</h4>
             <h5>Founder & CEO</h5>
-            <p className="text-white">Midline media solution</p>
+            <p className="text-white text-center">Midline media solution</p>
           </div>
         </div>
 
@@ -62,7 +61,7 @@ const FactsSection = () => {
                         0
                       </span>
                     </h3>
-                    <b className='fw-bold text-white'>{fact.text}</b>
+                    <b className='fw-bold text-white '>{fact.text}</b>
                   </div>
                 </div>
               </div>
