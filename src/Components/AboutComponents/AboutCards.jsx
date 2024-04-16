@@ -54,7 +54,7 @@ const AboutCards = () => {
         <div className='row'>
           {serviceData.map((item, index) => (
             <div key={index} className='col-xl-6 col-lg-4 col-sm-6 mb-4'>
-              <div className='bg-white py-5 px-4 text-center shadow'>
+              <div className='bg-white py-5 px-4 h-100 text-center shadow'>
                 <div className='icon-bg mb-4 water-wave '>
                   <i className='icon '>{item.icon}</i>
                 </div>

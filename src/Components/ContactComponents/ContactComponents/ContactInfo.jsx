@@ -13,7 +13,7 @@ const ContactInfo = () => {
         <div className="row">
           {contactInfoData.map((info, index) => (
             <div key={index} className="col-md-4 mb-4 mb-md-0">
-              <div className="bg-white box-shadow text-center p-5 px-md-2 px-lg-5">
+              <div className="bg-white shadow h-100 text-center p-5 px-md-2 px-lg-5">
                 <div className="text-primary icon-lg mb-4">{info.icon}</div>
                 <h4 className="mb-4">{info.title}</h4>
                 <ul className="list-unstyled">
