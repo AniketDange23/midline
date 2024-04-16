@@ -44,7 +44,7 @@ body {
 p,
 .paragraph {
   text-align: justify;
-  font-weight: 400;
+  font-weight: 500;
   color: #808080;
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
@@ -93,8 +93,11 @@ h6,
   font-size: 16px;
 }
 span{
-  
   text-align: justify!important;
+}
+b{
+  font: 500 1.1rem "inter",sans-serif ;
+  color: #c8c8c8;
 }
 .fixed-top {
   position: fixed;
@@ -209,113 +212,6 @@ a {
   object-fit: cover;
 }
 
-/* hover effect */
-.hover-ripple {
-  transition: 0.2s ease-in;
-}
-.hover-ripple:hover {
-  transform: scale(0.97);
-}
-.hover-ripple:hover::after {
-  -webkit-animation: sonarEffect 1s ease-out 50ms;
-  animation: sonarEffect 1s ease-out 50ms;
-}
-.hover-ripple::after {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  content: "";
-  top: 0;
-  left: 0;
-  padding: 0;
-  z-index: -1;
-  opacity: 0;
-  transform: scale(0.9);
-  border-radius: inherit;
-}
-.hover-ripple.ripple-white:hover::after {
-  -webkit-animation: sonarEffectWhite 1s ease-out 50ms;
-  animation: sonarEffectWhite 1s ease-out 50ms;
-}
-
-@-webkit-keyframes sonarEffect {
-  0% {
-    opacity: 0.1;
-  }
-  40% {
-    opacity: 0.3;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e,
-      0 0 0 10px rgba(255, 255, 255, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e,
-      0 0 0 10px rgba(255, 255, 255, 0.2);
-    transform: scale(1.2);
-    opacity: 0;
-  }
-}
-
-@keyframes sonarEffect {
-  0% {
-    opacity: 0.1;
-  }
-  40% {
-    opacity: 0.3;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e,
-      0 0 0 10px rgba(255, 255, 255, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #26589e,
-      0 0 0 10px rgba(255, 255, 255, 0.2);
-    transform: scale(1.2);
-    opacity: 0;
-  }
-}
-@-webkit-keyframes sonarEffectWhite {
-  0% {
-    opacity: 0.1;
-  }
-  40% {
-    opacity: 0.3;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff,
-      0 0 0 10px rgba(255, 255, 255, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff,
-      0 0 0 10px rgba(255, 255, 255, 0.2);
-    transform: scale(1.2);
-    opacity: 0;
-  }
-}
-@keyframes sonarEffectWhite {
-  0% {
-    opacity: 0.1;
-  }
-  40% {
-    opacity: 0.3;
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff,
-      0 0 0 10px rgba(255, 255, 255, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #fff,
-      0 0 0 10px rgba(255, 255, 255, 0.2);
-    transform: scale(1.2);
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes clockwise {
-  to {
-    transform: rotate(360deg) translatez(0);
-  }
-}
-
-@keyframes clockwise {
-  to {
-    transform: rotate(360deg) translatez(0);
-  }
-}
 /* /preloader */
 ol,
 ul {

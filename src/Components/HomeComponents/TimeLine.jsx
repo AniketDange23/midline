@@ -67,7 +67,7 @@ const Timeline = () => {
   return (
     <div className="bg">
       <div className="container mt-5">
-        <h2 className="text-center">Our TimeLine</h2>
+        <h2 className="text-center">Our Process</h2>
         <div className="row py-5">
           <div className="col-md-12">
             <div className="main-timeline">

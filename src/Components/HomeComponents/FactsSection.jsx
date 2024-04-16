@@ -1,15 +1,13 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useEffect } from "react";
 import { FaAward } from "react-icons/fa";
 import { FiTarget } from "react-icons/fi";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
 import { SlCalender } from "react-icons/sl";
+
 const factsData = [
   { icon: SlCalender, count: " 3 ", text: "Years Experience" },
-
   { icon: FiTarget, count: 70, text: "Expert Worker" },
   { icon: HiOutlineEmojiHappy, count: 9, text: "Happy Clients" },
-
   { icon: FaAward, count: 250, text: "Best Calling Services" },
 ];
 
@@ -40,23 +38,39 @@ const FactsSection = () => {
   }, []);
 
   return (
-    <div className='container-fluid bg-dark   mb-5'>
-      <div className='row  p-4 d-flex justify-content-center align-content-center'>
-        {factsData.map((fact, index) => (
-          <div key={index} className='col-lg-3 col-sm-6 mb-3 mb-lg-0 '>
-            <div className='d-flex align-content-center   '>
-              {<fact.icon className='icon-lg align-content-center  mr-2' />}
-              <div  style={{textAlign:"justify"}} >
-                <h3>
-                  <span className='count  text-white' data-count={fact.count}>
-                    0{" "}
-                  </span>
-                </h3>
-                <h6 className='text-light fw-bold'>{fact.text}</h6>
-              </div>
-            </div>
+    <div className='container-fluid bg-dark mb-5'>
+      <div className='row justify-content-center align-content-center py-5'>
+
+        <div className="col-lg-3   mb-4 mb-lg-0">
+          <div className="   align-content-center text-center">
+            <img className="img-fluid" src="/CEO.png" alt="CEO" style={{ width: "300px" }} />
+            <h4 >Mr. Komal Kumbhare</h4>
+            <h5 >Founder & CEO</h5>
+            <p className="text-center text-white">Midline media solution</p>
           </div>
-        ))}
+        </div>
+
+        <div className="col-lg-6">
+  <div className="row justify-content-center  align-content-center py-5">
+    {factsData.map((fact, index) => (
+      <div key={index} className='col-lg-6 col-md-6  mb-3 mb-lg-0 p-3'>
+        <div className='d-flex align-items-center shadow p-3' >
+          {React.createElement(fact.icon, { className: 'icon-lg text-primary align-content-center mr-3' })}
+          <div style={{ textAlign: "justify" }}>
+            <h3>
+              <span className='count text-white' data-count={fact.count}>
+                0
+              </span>
+            </h3>
+            <b className='fw-bold'>{fact.text}</b>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
+
       </div>
     </div>
   );

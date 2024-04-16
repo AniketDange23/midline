@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div>
       
-      <div className='py-5 px-2 bg-secondary'>
+      <div className='py-5 px-2 g-0 bg-secondary'>
         <div className='container'>
           <div className='row justify-content-between'>
             <div className='col-lg-5 mb-5 mb-lg-0'>
@@ -30,17 +30,17 @@ const Footer = () => {
               <h4 className='text-white mb-4'>Follow Us On</h4>
               <ul className='list-inline social-icon-alt'>
                 <li className='list-inline-item'>
-                  <a className='hover-ripple' href='#'>
+                  <a className='hover-ripple' href="https://www.linkedin.com/in/midline-media-solution-38a5051a4">
                     <FaFacebook style={{ fontSize: "22px" }} />
                   </a>
                 </li>
                 <li className='list-inline-item'>
-                  <a className='hover-ripple' href='#'>
+                  <a className='hover-ripple' href="https://www.instagram.com/techcall.us2/">
                     <FaInstagram style={{ fontSize: "22px" }} />
                   </a>
                 </li>
                 <li className='list-inline-item'>
-                  <a className='hover-ripple' href='#'>
+                  <a className='hover-ripple' href="https://www.linkedin.com/in/midline-media-solution-38a5051a4">
                     <FaLinkedin style={{ fontSize: "22px" }} />
                   </a>
                 </li>
