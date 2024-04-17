@@ -7,39 +7,26 @@ body {
   color: #818385;
 }
 
-/*  */
-.typewriter h1 {
-  color: #fff;
-  font-family: "Barlow Condensed", sans-serif;
 
+/*  */
+.typewriter h3 {
+  color: #fff; /* Sets the text color to white */
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin: 0 auto; /* Centers the element horizontally */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; /* Specifies the animations */
 }
 
 /* The typing effect */
 @keyframes typing {
   from {
-    width: 0;
+    width: 0; /* Starts with zero width */
   }
   to {
-    width: 100%;
-  }
+    width: 100%; /* Ends with full width */
 }
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
 }
-
 
 p,
 .paragraph {
@@ -108,6 +95,7 @@ b{
 }
 a {
   color: white;
+  text-decoration: none;
 }
 
 /* /typography */
@@ -251,7 +239,7 @@ select:focus {
 
 a:hover {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a.text-white:hover,
@@ -700,6 +688,7 @@ textarea.form-control-sm {
   border: 1px solid #fff;
   background: transparent;
   line-height: 45px;
+  text-decoration: none;
   text-align: center;
 }
 .social-icon li a:hover {

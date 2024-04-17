@@ -1,7 +1,6 @@
 import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import './TimeLine.css'; // assuming you have your CSS file for styling
 import { AiOutlineFileSearch } from "react-icons/ai";
 import { RiFileTextFill } from "react-icons/ri";
 import { AiOutlinePhone } from "react-icons/ai";
@@ -80,8 +79,11 @@ const timelineData = [
 
 const TimeLine = () => {
   return (
-    <VerticalTimeline>
+    <div className="container">
+    <h3 className='text-center py-4'>Our Process</h3>
+       <VerticalTimeline>
       {timelineData.map((item, index) => (
+        
         <VerticalTimelineElement
           key={index}
           className={`vertical-timeline-element--${item.type}`}
@@ -90,11 +92,14 @@ const TimeLine = () => {
           iconStyle={{ background: '#007bff', color: '#fff' }} // assuming blue color for all icons
           icon={item.icon} // Using the icon from the timelineData array
         >
+        
           <h4 className="vertical-timeline-element-title">{item.title}</h4>
           <p>{item.description}</p>
         </VerticalTimelineElement>
       ))}
     </VerticalTimeline>
+    </div>
+   
   );
 };
 
