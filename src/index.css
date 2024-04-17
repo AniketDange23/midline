@@ -369,6 +369,9 @@ a.text-dark:hover {
 .bg-primary {
   background: #1a4380 !important;
 }
+/* .header-bg{
+  background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+} */
 
 .bg-secondary {
   background: #252d39 !important;
@@ -695,8 +698,13 @@ textarea.form-control-sm {
 
 
 
+.footer{
+  background: linear-gradient(109.6deg, rgb(10, 19, 35) 11.2%, rgb(17, 40, 66) 91.1%);
+}
+
+
 .navigation {
-  box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.151);
   position: relative;
   z-index: 1;
 }
@@ -704,8 +712,7 @@ textarea.form-control-sm {
 .text-color:hover {
   color: #27279f;
 }
-.nav
-/* hero slider */
+
 .hero-section {
   padding: 160px 0 270px;
 }

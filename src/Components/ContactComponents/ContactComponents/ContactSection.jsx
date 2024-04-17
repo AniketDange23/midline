@@ -17,9 +17,9 @@ const ContactSection = () => {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>            </div>
           </div>
-          <div className="col-md-7">
-            <h3 className="section-title">Contact Form</h3>
-            <form action="#" className="row">
+          <div className="col-md-7"  id="form">
+            <h3 className="section-title" >Contact Form</h3>
+            <form  className="row">
               <div className="col-md-6">
                 <input type="text" name="name" id="name" className="form-control border-0 rounded-0 box-shadow mb-4" placeholder="Name" />
               </div>

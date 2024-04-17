@@ -10,8 +10,8 @@ import { IoLocationOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <div>
-      <div className="py-5 px-2 g-0 bg-secondary">
+    <div className="footer">
+      <div className="py-5 px-2 g-0 ">
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-5 mb-5 mb-lg-0">

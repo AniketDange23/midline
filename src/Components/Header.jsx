@@ -32,7 +32,7 @@ const Header = () => {
   ];
 
   return (
-    <div className={`navigation  bg-white  ${sticky ? "fixed-top" : ""}`}>
+    <div className={`navigation  header-bg   ${sticky ? "fixed-top" : ""}`}>
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light  " >
           <a className="navbar-brand" href="/">
@@ -64,7 +64,7 @@ const Header = () => {
               {navLinks.map((link, index) => (
                 <li key={index} className="nav-item">
                   <NavLink
-                    className="nav-link"
+                    className="nav-link  fw-semibold "
                     to={link.link}
                     onClick={toggleNavbar}
                   >
@@ -74,7 +74,7 @@ const Header = () => {
               ))}
             </ul>
           
-            <button className="button mx-3 "><a href="/contact"> Get's Stared</a></button>
+            <button className="button mx-3 "><a href="/contact#form" > Get's Stared</a></button>
           </div>
         </nav>
       </div>
