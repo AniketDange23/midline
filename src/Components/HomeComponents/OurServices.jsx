@@ -3,15 +3,13 @@ import React from "react";
 const OurServices = () => {
   return (
     <div className='container  my-5'>
-      <div>
         <h2 className='text-center mb-4 px-2'>Our Services</h2>
         <h4 className='mb-4 text-center px-2'>What We Offer</h4>
-      </div>
+        <br />
       <div className='row'>
-        <div className='col-lg-7  order-lg-1 align-content-center text-center justify-content-center'>
-          <ul className='list-unstyled'>
-            <div style={{ textAlign: "justify" }}>
-              <h3 className='mb-4 ' style={{ width: "max-content" }}>
+        <div className='col-lg-6  order-lg-1'>
+            <div style={{ textAlign: "justify" }} className='mb-5'>
+              <h3  style={{ width: "max-content" }}>
                 Cold Calling
               </h3>
 
@@ -24,7 +22,7 @@ const OurServices = () => {
                 or existing connection.
               </p>
             </div>
-            <div style={{ textAlign: "justify" }}>
+            <div style={{ textAlign: "justify" }} className='mb-5'>
               <div>
                 <h3 className='mb-3'>Appointment setting</h3>
               </div>
@@ -40,7 +38,6 @@ const OurServices = () => {
                 move them further along the sales pipeline.
               </p>
             </div>
-          </ul>
         </div>
         <div className='col-lg-5 order-1 align-content-center text-center justify-content-center'>
           <div className='feature-img-bg'>
@@ -54,7 +51,7 @@ const OurServices = () => {
         </div>
       </div>
       {/* second */}
-      <div className='row py-5'>
+      <div className='row '>
         <div className='col-lg-5 order-lg-1 order-2 '>
           <div className='feature-img-bg '>
             <img
@@ -65,11 +62,11 @@ const OurServices = () => {
             />
           </div>
         </div>
-        <div className='col-lg-7 pr-lg-0 order-lg-2 order-1 mb-5 mb-lg-0 align-content-center text-center justify-content-center'>
+        <div className='col-lg-6 pr-lg-0 order-lg-2 order-1 mb-5 mb-lg-0 '>
           <ul className='list-unstyled'>
-            <li className='d-flex align-items-center mb-5'>
-              <div style={{ textAlign: "justify" }}>
-                <h4>Lead Generation</h4>
+            <li className='d-flex align-items-center '>
+              <div style={{ textAlign: "justify" }} className='mb-5'>
+                <h3>Lead Generation</h3>
                 <p>
                   Lead generation is the process of identifying and attracting
                   potential customers, or "leads," who have shown interest in a
@@ -89,9 +86,9 @@ const OurServices = () => {
               </div>
             </li>
             <li className='d-flex align-items-center mb-5  text-center justify-content-center'>
-              <div className='text-center md-2'></div>
+              <div className='text-center md-5'></div>
               <div style={{ textAlign: "justify" }}>
-                <h4>Customer Service</h4>
+                <h3>Customer Service</h3>
                 <span>
                   Customer service refers to the assistance and support provided
                   to customers before, during, and after they purchase a product
