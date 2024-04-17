@@ -6,8 +6,8 @@ const OurServices = () => {
         <h2 className='text-center mb-4 px-2'>Our Services</h2>
         <h4 className='mb-4 text-center px-2'>What We Offer</h4>
         <br />
-      <div className='row'>
-        <div className='col-lg-6  order-lg-1'>
+      <div className='row '>
+        <div className='col-lg-6  mb-5  order-lg-1'>
             <div style={{ textAlign: "justify" }} className='mb-5'>
               <h3  style={{ width: "max-content" }}>
                 Cold Calling
