@@ -4,14 +4,17 @@ const OurServices = () => {
   return (
     <div className='container  my-5'>
       <div>
-        <h3 className='text-center mb-4 px-2'>Our Services</h3>
+        <h2 className='text-center mb-4 px-2'>Our Services</h2>
         <h4 className='mb-4 text-center px-2'>What We Offer</h4>
       </div>
       <div className='row'>
-        <div className='col-lg-7 order-lg-1 align-content-center text-center justify-content-center'>
+        <div className='col-lg-7  order-lg-1 align-content-center text-center justify-content-center'>
           <ul className='list-unstyled'>
             <div style={{ textAlign: "justify" }}>
-              <h4 className='mb-4'>Cold Calling</h4>
+              <h3 className='mb-4 ' style={{ width: "max-content" }}>
+                Cold Calling
+              </h3>
+
               <p>
                 Cold calling is a technique we use where a salesperson contacts
                 individuals or businesses who have not previously expressed
@@ -21,21 +24,22 @@ const OurServices = () => {
                 or existing connection.
               </p>
             </div>
-            <li className='d-flex align-items-center mb-5'>
-              <div style={{ textAlign: "justify" }}>
-                <h4 className='mb-4'>Appointment setting</h4>
-                <span>
-                  Appointment setting is a crucial aspect of sales and marketing
-                  processes. It involves scheduling meetings or appointments
-                  between sales representatives and potential clients or leads.
-                  This process is essential for initiating face-to-face
-                  interactions, virtual meetings, or phone calls where sales
-                  representatives can present their products or services,
-                  understand the needs of the potential client, and ultimately
-                  move them further along the sales pipeline.
-                </span>
+            <div style={{ textAlign: "justify" }}>
+              <div>
+                <h3 className='mb-3'>Appointment setting</h3>
               </div>
-            </li>
+
+              <p>
+                Appointment setting is a crucial aspect of sales and marketing
+                processes. It involves scheduling meetings or appointments
+                between sales representatives and potential clients or leads.
+                This process is essential for initiating face-to-face
+                interactions, virtual meetings, or phone calls where sales
+                representatives can present their products or services,
+                understand the needs of the potential client, and ultimately
+                move them further along the sales pipeline.
+              </p>
+            </div>
           </ul>
         </div>
         <div className='col-lg-5 order-1 align-content-center text-center justify-content-center'>
@@ -64,7 +68,6 @@ const OurServices = () => {
         <div className='col-lg-7 pr-lg-0 order-lg-2 order-1 mb-5 mb-lg-0 align-content-center text-center justify-content-center'>
           <ul className='list-unstyled'>
             <li className='d-flex align-items-center mb-5'>
-              <div className='text-center mb-2'></div>
               <div style={{ textAlign: "justify" }}>
                 <h4>Lead Generation</h4>
                 <p>
@@ -75,7 +78,7 @@ const OurServices = () => {
                   individuals or organizations that are likely to become
                   customers.
                 </p>
-                <ul className="listUnlisted">
+                <ul className="list-unstyled ">
                   <li>Content Marketing</li>
                   <li>Social Media Marketing</li>
                   <li>Search Engine Optimization (SEO)</li>

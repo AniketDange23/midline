@@ -30,7 +30,7 @@ const Home = () => {
     <div className='container-fluid   '>
       <div className='row align-content-center justify-content-center '>
         <div className='col-lg-5 py-3 px-3 align-content-center justify-content-center'>
-          <h3 className='mb-3'>Welcome to MIDLINE Media Solution</h3>
+          <h3 className='mb-3 position-relative  '>Welcome to MIDLINE Media Solution</h3>
           <p>
             Midline media solution founded in 2020. Over the years, we have
             grown into a versatile and forward-thinking organization, dedicated

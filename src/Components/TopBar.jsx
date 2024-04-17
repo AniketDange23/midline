@@ -21,11 +21,11 @@ const TopBar = () => {
           <div className="col-md-6 text-md-right text-center">
             <ul className="list-inline">
               <li className="list-inline-item mx-0 border-right border-secondary">
-                <a className="text-white d-inline-block px-lg-3 px-2" href="mailto:info@elioratechno.com">info@elioratechno.com</a>
+                <a className="text-white d-inline-block px-lg-3 px-2" href="mailto:sales@midlinesmedia.com">sales@midlinesmedia.com</a>
               </li>
               <li className="list-inline-item mx-0">
-                <a className="text-white d-inline-block px-lg-3 px-2" href="callto:+91 8956101181">
-                  Call Us Now: <span className="">+91 8956101181</span>
+                <a className="text-white d-inline-block px-lg-3 px-2" href="callto:+91 8830826434">
+                  Call Us Now: <span className="">+91 8830826434</span>
                 </a>
               </li>
             </ul>

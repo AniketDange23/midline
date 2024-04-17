@@ -5,10 +5,10 @@ import { HiOutlineEmojiHappy } from "react-icons/hi";
 import { SlCalender } from "react-icons/sl";
 
 const factsData = [
-  { icon: SlCalender, count: " 3 ", text: "Years Experience" },
-  { icon: FiTarget, count: 70, text: "Expert Worker" },
-  { icon: HiOutlineEmojiHappy, count: 9, text: "Happy Clients" },
-  { icon: FaAward, count: 250, text: "Best Calling Services" },
+  { icon: SlCalender, count: "3", text: "Years Experience" },
+  { icon: FiTarget, count: "70", text: "Expert Worker" },
+  { icon: HiOutlineEmojiHappy, count: "9", text: "Happy Clients" },
+  { icon: FaAward, count: "250", text: "Best Calling Services" },
 ];
 
 const FactsSection = () => {
@@ -38,11 +38,16 @@ const FactsSection = () => {
   }, []);
 
   return (
-    <div className='container-fluid bg-dark '>
-      <div className='row justify-content-center g-0 align-items-center '>
+    <div className="container-fluid bg-dark">
+      <div className="row justify-content-center g-0 align-items-center">
         <div className="col-lg-3 mb-4 mb-lg-0">
           <div className="text-center">
-            <img className="img-fluid" src="/CEO.png" alt="CEO" style={{ maxWidth: "100%", height: "auto" }} />
+            <img
+              className="img-fluid"
+              src="/CEO.png"
+              alt="CEO"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
             <h4>Mr. Komal Kumbhare</h4>
             <h5>Founder & CEO</h5>
             <p className="text-white text-center">Midline media solution</p>
@@ -52,23 +57,24 @@ const FactsSection = () => {
         <div className="col-lg-6">
           <div className="row justify-content-center align-items-center py-4">
             {factsData.map((fact, index) => (
-              <div key={index} className='col-lg-6 col-md-6 mb-3'>
-                <div className='d-flex align-items-center shadow p-3'>
-                  {React.createElement(fact.icon, { className: 'icon-lg text-primary mr-3' })}
-                  <div style={{ textAlign: "justify" }}>
+              <div key={index} className="col-lg-6 col-md-6 mb-3">
+                <div className="d-flex align-items-center shadow p-3">
+                  {React.createElement(fact.icon, {
+                    className: "icon-lg text-primary mr-3",
+                  })}
+                  <div>
                     <h3>
-                      <span className='count text-white' data-count={fact.count}>
+                      <span className="count text-white" data-count={fact.count}>
                         0
                       </span>
                     </h3>
-                    <b className='fw-bold text-white '>{fact.text}</b>
+                    <b className="fw-bold text-white">{fact.text}</b>
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
-
       </div>
     </div>
   );

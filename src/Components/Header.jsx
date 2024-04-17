@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
@@ -33,7 +34,7 @@ const Header = () => {
   return (
     <div className={`navigation  bg-white  ${sticky ? "fixed-top" : ""}`}>
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light  bg-white " >
+        <nav className="navbar navbar-expand-lg navbar-light  " >
           <a className="navbar-brand" href="/">
             <img
               className="img-fluid LogoImage"
@@ -43,7 +44,7 @@ const Header = () => {
             />
           </a>
           <button
-            className="navbar-toggler border-0"
+            className="navbar-toggler border-0 button text-white"
             type="button"
             onClick={toggleNavbar}
             aria-controls="navigation"
