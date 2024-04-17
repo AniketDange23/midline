@@ -8,7 +8,7 @@ const AboutSection = () => {
               className="img-fluid"
               src="/images/h3.jpg"
               alt="feature-image"
-              style={{minHeight:"300px"}}
+              style={{width:"500px"}}
             />
           </div>
         </div>
