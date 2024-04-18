@@ -41,7 +41,7 @@ const FactsSection = () => {
   }, []);
 
   return (
-    <div className="container-fluid bg-dark  py-5" >
+    <div className="container-fluid bg-dark" >
       <div className="row justify-content-center g-0 align-items-center">
         <div className="col-lg-3 mb-4 mb-lg-0">
           <div className="text-center" data-aos="flip-left"
@@ -60,9 +60,10 @@ const FactsSection = () => {
         </div>
 
         <div className="col-lg-6">
-          <div className="row justify-content-center align-items-center py-4">
+          <div className="row justify-content-center align-items-center py-4" >
             {factsData.map((fact, index) => (
-              <div key={index} className="col-lg-6 col-md-6 mb-3">
+              <div key={index} className="col-lg-6 col-md-6 mb-3" data-aos="fade-up"
+     data-aos-duration="3000">
                 <div className="d-flex align-items-center shadow bg-dark p-3">
                   {React.createElement(fact.icon, {
                     className: "icon-lg text-primary mr-3",

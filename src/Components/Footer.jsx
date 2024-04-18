@@ -124,7 +124,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-secondary-darken py-2">
+      <div className="bg-black py-2">
         <div className="container">
           <div className="row">
             <div className="col-md-6 text-center text-md-left mb-3 mb-md-0">
