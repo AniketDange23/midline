@@ -3,12 +3,12 @@ import React from "react";
 const OurServices = () => {
   return (
 
-    <div className='container  my-5'  data-aos="zoom-in">
-        <h2 className='text-center mb-4 px-2'>Our Services</h2>
-        <h4 className='mb-4 text-center px-2'>What We Offer</h4>
+    <div className='container  my-5' >
+        <h2  data-aos="fade-down-left"className='text-center mb-4 px-2'>Our Services</h2>
+        <h4  data-aos="zoom-in" className='mb-4 text-center px-2'>What We Offer</h4>
         <br />
       <div className='row '>
-        <div className='col-lg-6  mb-5  order-lg-1'>
+        <div className='col-lg-6  mb-5  order-lg-1'  data-aos="zoom-in">
             <div style={{ textAlign: "justify" }} className='mb-5'>
               <h3  style={{ width: "max-content" }}>
                 Cold Calling
@@ -40,8 +40,8 @@ const OurServices = () => {
               </p>
             </div>
         </div>
-        <div className='col-lg-5 mb-3 order-1 align-content-center text-center justify-content-center'>
-          <div className='feature-img-bg'>
+        <div  data-aos="fade-up" className='col-lg-5 mb-3 order-1 align-content-center text-center justify-content-center'>
+          <div className='feature-img-bg'  >
             <img
               className='img-fluid'
               src='/images/h2.jpg'
@@ -53,7 +53,7 @@ const OurServices = () => {
       </div>
       {/* second */}
       <div className='row data-aos="flip-up" '>
-        <div className='col-lg-5 order-lg-1 order-2 '>
+        <div className='col-lg-5 order-lg-1 order-2 '  data-aos="fade-up-right">
           <div className='feature-img-bg '>
             <img
               className='img-fluid '
@@ -67,8 +67,8 @@ const OurServices = () => {
           <ul className='list-unstyled'>
             <li className='d-flex align-items-center '>
               <div style={{ textAlign: "justify" }} className='mb-5'>
-                <h3>Lead Generation</h3>
-                <p>
+                <h3  data-aos="fade-up-right">Lead Generation</h3>
+                <p  data-aos="fade-up-right">
                  Lead generation is the process of identifying and attracting
                   potential customers, or <b>"leads"</b>  who have shown interest in a
                   company's products or services. The goal of lead generation is
@@ -87,7 +87,7 @@ const OurServices = () => {
               </div>
             </li>
             <li className='d-flex align-items-center mb-5  text-center justify-content-center'>
-              <div className='text-center md-5'></div>
+              <div className='text-center md-5'  data-aos="fade-up-right"></div>
               <div style={{ textAlign: "justify" }}>
                 <h3>Customer Service</h3>
                 <span>

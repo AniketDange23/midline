@@ -38,7 +38,7 @@ const Home = () => {
     <div className="container-fluid">
       <div className="row align-items-center justify-content-center">
         <div className="col-lg-5 py-3 px-3">
-          <h3 className="mb-3 position-relative" data-aos="zoom-out-right">
+          <h3 className="mb-3 position-relative" >
             Welcome to MIDLINE Media Solution
           </h3>
           <p>
