@@ -74,8 +74,9 @@ span{
 }
 b{
   font: 500 1.1rem "inter",sans-serif ;
-  color: #c8c8c8;
+  color: #000000;
 }
+
 .fixed-top {
   position: fixed;
   top: 0;
@@ -369,9 +370,6 @@ a.text-dark:hover {
 .bg-primary {
   background: #1a4380 !important;
 }
-/* .header-bg{
-  background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
-} */
 
 .bg-secondary {
   background: #252d39 !important;
@@ -384,7 +382,7 @@ a.text-dark:hover {
 .bg-gray {
   padding: 10px;
   border-radius: 5px;
-  background: #d9def1 !important;
+  background: #eff2fb !important;
 }
 
 .bg-gray-white {
@@ -704,6 +702,7 @@ textarea.form-control-sm {
 
 
 .navigation {
+
   box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.151);
   position: relative;
   z-index: 1;

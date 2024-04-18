@@ -32,9 +32,9 @@ const Header = () => {
   ];
 
   return (
-    <div className={`navigation  header-bg   ${sticky ? "fixed-top" : ""}`}>
+    <div className={`navigation  ${sticky ? "fixed-top" : ""}`}>
       <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light  " >
+        <nav className="navbar navbar-expand-lg   " >
           <a className="navbar-brand" href="/">
             <img
               className="img-fluid LogoImage"

@@ -6,7 +6,8 @@ import {
 
 } from "react-icons/fa";
 import { IoMdArrowDropright } from "react-icons/io";
-import { IoLocationOutline } from "react-icons/io5";
+import { IoLocationOutline, IoMail } from "react-icons/io5";
+import { MdLocalPhone } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -87,7 +88,19 @@ const Footer = () => {
                         440022
                       </a>
                     </li>
-                    {/* Add other contact info */}
+                    <li className="mb-3 text-light">
+                      <a className="text-light d-block" href="mailto:sales@midlinesmedia.com">
+                        <IoMail /> sales@midlinesmedia.com
+                      </a>
+                    </li>
+                    <li className="mb-3 text-light">
+                      <a className="text-light d-block" href="callto:+91 8830826434">
+                        <MdLocalPhone /> +91 8830826434
+                      </a>
+                    </li>
+                  
+
+                    
                   </ul>
                 </div>
                 <div className="col-12">

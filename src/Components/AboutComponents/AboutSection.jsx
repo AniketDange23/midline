@@ -1,8 +1,18 @@
+
+
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
+import { useEffect } from "react";
+
 const AboutSection = () => {
+
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
   return (
     <div className="container mb-5 py-5">
       <div className="row">
-        <div className="col-lg-6 order-lg-1 order-2 d-flex align-items-center justify-content-center">
+        <div className="col-lg-6 order-lg-1 order-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
           <div className="feature-img-bg box-shadow  ">
             <img
               className="img-fluid"
@@ -12,7 +22,7 @@ const AboutSection = () => {
             />
           </div>
         </div>
-        <div className="col-lg-6 order-lg-2 order-1">
+        <div className="col-lg-6 order-lg-2 order-1"  data-aos="fade-down" >
           <div className="p-4">
             <h3 className="section-title">We Are a Dynamic Team and Business Agency</h3>
             <p className="mb-4">

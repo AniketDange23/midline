@@ -2,7 +2,8 @@ import React from "react";
 
 const OurServices = () => {
   return (
-    <div className='container  my-5'>
+
+    <div className='container  my-5'  data-aos="zoom-in">
         <h2 className='text-center mb-4 px-2'>Our Services</h2>
         <h4 className='mb-4 text-center px-2'>What We Offer</h4>
         <br />
@@ -39,26 +40,26 @@ const OurServices = () => {
               </p>
             </div>
         </div>
-        <div className='col-lg-5 order-1 align-content-center text-center justify-content-center'>
+        <div className='col-lg-5 mb-3 order-1 align-content-center text-center justify-content-center'>
           <div className='feature-img-bg'>
             <img
               className='img-fluid'
               src='/images/h2.jpg'
               alt='feature-image'
-              style={{ width: "450px" }}
+              style={{ width: "500px" }}
             />
           </div>
         </div>
       </div>
       {/* second */}
-      <div className='row '>
+      <div className='row data-aos="flip-up" '>
         <div className='col-lg-5 order-lg-1 order-2 '>
           <div className='feature-img-bg '>
             <img
               className='img-fluid '
               src='/images/h1.jpg'
               alt='feature-image'
-              style={{ width: "450px" }}
+              style={{ width: "500px" }}
             />
           </div>
         </div>
@@ -68,8 +69,8 @@ const OurServices = () => {
               <div style={{ textAlign: "justify" }} className='mb-5'>
                 <h3>Lead Generation</h3>
                 <p>
-                  Lead generation is the process of identifying and attracting
-                  potential customers, or "leads," who have shown interest in a
+                 Lead generation is the process of identifying and attracting
+                  potential customers, or <b>"leads"</b>  who have shown interest in a
                   company's products or services. The goal of lead generation is
                   to gather contact information and other relevant details about
                   individuals or organizations that are likely to become
@@ -103,6 +104,7 @@ const OurServices = () => {
         </div>
       </div>
     </div>
+
   );
 };
 

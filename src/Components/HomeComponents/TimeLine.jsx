@@ -79,7 +79,7 @@ const timelineData = [
 
 const TimeLine = () => {
   return (
-    <div className="container">
+    <div className="container py-5">
     <h3 className='text-center py-4'>Our Process</h3>
        <VerticalTimeline>
       {timelineData.map((item, index) => (
