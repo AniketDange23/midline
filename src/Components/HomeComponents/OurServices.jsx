@@ -7,43 +7,45 @@ const OurServices = () => {
     AOS.init();
   }, []);
   return (
-
     <div className='container  my-5'>
-        <h2 className='text-center mb-4 px-2' data-aos="fade-down" >Our Services</h2>
-        <h4 className='mb-4 text-center px-2'>What We Offer</h4>
-        <br />
+      <h2 className='text-center mb-4 px-2' data-aos='fade-down'>
+        Our Services
+      </h2>
+      <h4 className='mb-4 text-center px-2'>What We Offer</h4>
+      <br />
       <div className='row '>
         <div className='col-lg-6  mb-5 px-5  order-lg-1'>
-            <div style={{ textAlign: "justify" }} data-aos="fade-down" className='mb-5'>
-              <h3  style={{ width: "max-content" }}>
-                Cold Calling
-              </h3>
+          <div
+            style={{ textAlign: "justify" }}
+            data-aos='fade-down'
+            className='mb-5'
+          >
+            <h3 style={{ width: "max-content" }}>Cold Calling</h3>
 
-              <p>
-                Cold calling is a technique we use where a salesperson contacts
-                individuals or businesses who have not previously expressed
-                interest in the product or service. The term "cold" refers to
-                the fact that the salesperson has no prior relationship with the
-                prospect and is initiating contact without any warm introduction
-                or existing connection.
-              </p>
+            <p>
+              Cold calling is a technique we use where a salesperson contacts
+              individuals or businesses who have not previously expressed
+              interest in the product or service. The term "cold" refers to the
+              fact that the salesperson has no prior relationship with the
+              prospect and is initiating contact without any warm introduction
+              or existing connection.
+            </p>
+          </div>
+          <div style={{ textAlign: "justify" }} className='mb-5'>
+            <div>
+              <h3 className='mb-3'>Appointment setting</h3>
             </div>
-            <div style={{ textAlign: "justify" }} className='mb-5'>
-              <div>
-                <h3 className='mb-3'>Appointment setting</h3>
-              </div>
 
-              <p>
-                Appointment setting is a crucial aspect of sales and marketing
-                processes. It involves scheduling meetings or appointments
-                between sales representatives and potential clients or leads.
-                This process is essential for initiating face-to-face
-                interactions, virtual meetings, or phone calls where sales
-                representatives can present their products or services,
-                understand the needs of the potential client, and ultimately
-                move them further along the sales pipeline.
-              </p>
-            </div>
+            <p>
+              Appointment setting is a crucial aspect of sales and marketing
+              processes. It involves scheduling meetings or appointments between
+              sales representatives and potential clients or leads. This process
+              is essential for initiating face-to-face interactions, virtual
+              meetings, or phone calls where sales representatives can present
+              their products or services, understand the needs of the potential
+              client, and ultimately move them further along the sales pipeline.
+            </p>
+          </div>
         </div>
         <div className='col-lg-5 mb-3  order-1 align-content-center text-center justify-content-center'>
           <div className='feature-img-bg'>
@@ -57,7 +59,7 @@ const OurServices = () => {
         </div>
       </div>
       {/* second */}
-      <div className='row  ' data-aos="fade-down">
+      <div className='row  ' data-aos='fade-down'>
         <div className='col-lg-5 order-lg-1 order-2 '>
           <div className='feature-img-bg '>
             <img
@@ -72,36 +74,29 @@ const OurServices = () => {
           <ul className='list-unstyled'>
             <li className='d-flex align-items-center '>
               <div style={{ textAlign: "justify" }} className='mb-5'>
-                <h3>Lead Generation</h3>
+                <h3> CUSTOMER SERVICES</h3>
                 <p>
-                 Lead generation is the process of identifying and attracting
-                  potential customers, or Leads who have shown interest in a
-                  company's products or services. The goal of lead generation is
-                  to gather contact information and other relevant details about
-                  individuals or organizations that are likely to become
-                  customers.
+                  Customer service refers to the assistance and support provided
+                  to customers before, during, and after they purchase a product
+                  or service. It encompasses a wide range of activities and
+                  interactions aimed at ensuring customer satisfaction and
+                  fostering positive relationships between customers and a
+                  business or organization. Excellent customer service is
+                  essential for businesses to attract and retain customers,
+                  differentiate themselves from competitors, and build a strong
+                  reputation for quality and reliability. It plays a crucial
+                  role in enhancing the overall customer experience and driving
+                  long-term success.
                 </p>
-                <ul className="list-unstyled ">
-                  <li>Content Marketing</li>
-                  <li>Social Media Marketing</li>
-                  <li>Search Engine Optimization (SEO)</li>
-                  <li>Email Marketing</li>
-                  <li>Paid Advertising</li>
-                  <li>Networking and Referrals</li>
-                </ul>
               </div>
             </li>
             <li className='d-flex align-items-center mb-5  text-center justify-content-center'>
               <div className='text-center md-5'></div>
               <div style={{ textAlign: "justify" }}>
-                <h3>Customer Service</h3>
+                <h3>Sales</h3>
                 <span>
-                  Customer service refers to the assistance and support provided
-                  to customers before, during, and after they purchase a product
-                  or service. It encompasses a wide range of activities and
-                  interactions aimed at ensuring customer satisfaction,
-                  resolving issues, and building positive relationships with
-                  customers.
+                Sales refers to the process of persuading, convincing, and ultimately securing commitments from potential customers to purchase products or services offered by a business. It involves a series of interactions and activities aimed at identifying, attracting, engaging, and converting leads into paying customers.  Customer service can be delivered through various channels, including in-person interactions, phone calls, emails, live chat, social media, and self-service portals. Companies prioritizing excellent customer service often see higher customer satisfaction levels, increased customer loyalty, and positive word-of-mouth recommendations, which can contribute to long-term business success.
+
                 </span>
               </div>
             </li>
@@ -109,7 +104,6 @@ const OurServices = () => {
         </div>
       </div>
     </div>
-
   );
 };
 

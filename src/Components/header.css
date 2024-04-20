@@ -1,6 +1,6 @@
 .navigation {
     position: relative; /* Required for stacking context */
-    background: rgba(255, 255, 255, 0.295); /* Semi-transparent background */
+    background: rgb(255, 255, 255); /* Semi-transparent background */
     backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
   }
@@ -23,17 +23,17 @@ box-shadow: 2px 2px 5px #4c4c4c2e;
 
   
   .nav-link {
-    color: #161C97;
+    color: #525252;
     margin:  5px;
   }
   .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-  
-    border-bottom: 2px solid #161c97; /* Adjust color */
-
+    color: #2832f4;
+    border-bottom: 3px solid #2832f4; 
   }
 
   .nav-link:hover {
-    color: #161c97;
-    border-bottom: 2px solid #161c97; /* Adjust color */
+   /* Adjust color */
+   color: #2832f4;
+   border-bottom: 3px solid #2832f4; 
   }
   

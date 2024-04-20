@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom';
-import './App.css';
 import TopBar from './Components/TopBar';
 import BackToTopButton from './Components/FixedButtons';
 import Footer from './Components/Footer';

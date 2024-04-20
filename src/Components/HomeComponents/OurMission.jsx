@@ -28,8 +28,8 @@ const OurMission = () => {
               className="col-xl-6 col-lg-6 col-md-6 mb-4"
               data-aos="fade-up" // Apply AOS animation
             >
-              <div className="bg-white h-100 py-5 px-4 text-center shadow transition hover-bg-dark">
-                <h4 className="mb-4">{item.title}</h4>
+              <div className="bg-white h-100 py-5 px-4 text-center rounded-5 border border-5 shadow transition hover-bg-dark">
+                <h3 className="mb-4">{item.title}</h3>
                 <p style={{ textAlign: "justify" }}>{item.description}</p>
               </div>
             </div>

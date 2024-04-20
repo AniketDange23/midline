@@ -9,13 +9,13 @@ const ServiceDetailSection = () => {
 
   return (
     <div className="col-lg-8">
-      <h2>{title}</h2>
+      <h3 className="mb-2">{title}</h3>
       <p className="mb-5" style={{textAlign:"justify"}}>{para1}</p>
       <img src={imageSrc} alt="service thumb" className="img-fluid w-100 mb-5" />
       <p style={{textAlign:"justify"}}>{para2}</p>
 
       {/* Benefits of service */}
-      <h3>Benefits of {title}</h3>
+      <h4>Benefits of {title}</h4>
       <p style={{textAlign:"justify"}}>
         {benifitsPara}
       </p>

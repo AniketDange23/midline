@@ -5,43 +5,55 @@ import "aos/dist/aos.css"; // Import AOS CSS
 import { useEffect } from "react";
 
 const ContactInfo = () => {
-
-
-  useEffect (() => {
+  useEffect(() => {
     AOS.init(); // Initialize AOS
   }, []);
   const contactInfoData = [
-    { icon: <FaMapMarkerAlt />, title: 'Our Address', items: ['Opposite Bank of Baroda, Ward Number 3, Parsodi, Trimurtee Nagar, Nagpur, Maharashtra 440022'] },
-    { icon: <MdPhoneInTalk />, title: 'Phone Number', items: ['+91 8668681466', '+91 8956101181']},
-    { icon: <FaEnvelope />, title: 'Message Us', items: ['info@elioratechno.com', 'sales@elioratechno.com'] }
+    {
+      icon: <FaMapMarkerAlt />,
+      title: "Our Address",
+      items: [
+        "Opposite Bank of Baroda, Ward Number 3, Parsodi, Trimurtee Nagar, Nagpur, Maharashtra 440022",
+      ],
+    },
+    {
+      icon: <MdPhoneInTalk />,
+      title: "Phone Number",
+      items: ["+91 8668681466", "+91 8956101181"],
+    },
+    {
+      icon: <FaEnvelope />,
+      title: "Message Us",
+      items: ["info@elioratechno.com", "sales@elioratechno.com"],
+    },
   ];
 
   return (
-    <section className="section pb-0">
-      <div className="container" data-aos="zoom-in-left">
-        <div className="row">
-          {contactInfoData.map((info, index) => (
-            <div key={index} className="col-md-4 mb-4 mb-md-0">
-              <div className="bg-white shadow h-100 text-center p-5 px-md-2 px-lg-5">
-                <div className="text-primary icon-lg mb-4">{info.icon}</div>
-                <h4 className="mb-4">{info.title}</h4>
-                <ul className="list-unstyled">
-                  {info.items.map((item, i) => (
-                    <li key={i}>
-                      {info.title === 'Message Us' && info.items.length === 2 && i === 0 ? (
-                        <a href={`mailto:${item}`}>{item}</a>
-                      ) : (
-                        item
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </div>
+    <div className='container py-5' data-aos='zoom-in-left'>
+      <div className='row'>
+        {contactInfoData.map((info, index) => (
+          <div key={index} className='col-md-4 mb-2 mb-md-0'>
+            <div className='bg-white shadow h-100 text-center p-5 px-md-1 px-lg-0'>
+              <div className='text-primary icon-lg mb-2'>{info.icon}</div>
+              <h4 className='mb-2'>{info.title}</h4>
+              <ul className='list-unstyled'>
+                {info.items.map((item, i) => (
+                  <li key={i}>
+                    {info.title === "Message Us" &&
+                    info.items.length === 2 &&
+                    i === 0 ? (
+                      <a href={`mailto:${item}`}>{item}</a>
+                    ) : (
+                      item
+                    )}
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 

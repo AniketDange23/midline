@@ -74,7 +74,7 @@ const Header = () => {
               ))}
             </ul>
           
-            <button className="button mx-3 "><a href="/contact#form" > Get's Stared</a></button>
+            <button className="button mx-3 "><a href="/contact#form" > Get's Started</a></button>
           </div>
         </nav>
       </div>

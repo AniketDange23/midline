@@ -1,44 +1,30 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { BiSupport } from "react-icons/bi";
-import { FaUsersGear } from "react-icons/fa6";
+import { FaUsersCog } from "react-icons/fa";
 import { MdVerifiedUser } from "react-icons/md";
-import { MdGroups2 } from "react-icons/md";
+import { MdGroup } from "react-icons/md";
+
 const serviceData = [
   {
     icon: <BiSupport />,
     title: "Call Center Management",
-    description: `Call center management is the art of managing the day-to-day operations of a call
-    center. This involves several tasks aimed at ensuring the smooth functioning of the
-    center while meeting customer service goals and keeping business costs in check.
-    `,
+    description: `Call center management involves overseeing the daily operations of a call center, with the objective of ensuring seamless functioning of the center, meeting customer service expectations, and managing costs. A call center manager handles various tasks, including staffing, scheduling, quality assurance, and performance monitoring. Effective call center management requires a multifaceted approach, which involves strategic planning, allocation of resources, and continuous improvement initiatives. By optimizing operational efficiency, enhancing customer `,
   },
 
   {
-    icon: <FaUsersGear />,
+    icon: <FaUsersCog />,
     title: "Servicing Multiple Domains",
-    description: `Servicing Multiple Domains By hosting and administering numerous websites on a single server or hosting account,
-    you can streamline your online presence by providing service for multiple domains. This
-    approach is a cost-effective and efficient solution for individuals and businesses that
-    manage multiple brands, projects, or online initiatives.`,
+    description:`When you host and manage multiple websites on a single server or hosting account, you can confidently simplify your online presence and provide service for multiple domains. This approach is a highly cost-effective and efficient solution for individuals and businesses that manage multiple brands, projects, or online initiatives. It helps to reduce the costs of running multiple servers and simplifies the management process by having everything in one place. With this approach, you can confidently focus on growing your business and online presence without worrying about the technical details of managing multiple domains.`
   },
   {
-    icon: <MdGroups2 />,
+    icon: <MdGroup />,
     title: "Highly Professional Staff",
-    description: `Highly professional call center staff are the cornerstone of a positive customer
-    experience. They combine exceptional communication abilities, deep product
-    knowledge, and a genuine desire to help customers. This unique blend of skills
-    empowers them to effectively navigate customer inquiries, troubleshoot problems, and
-    foster positive customer relationship`,
+    description: ` hosting and administering multiple websites on a single server or hosting account, you can easily manage your online presence and provide service for multiple domains. This approach is a highly cost-effective and efficient solution for individuals and businesses that manage multiple brands, projects, or online initiatives. It helps to reduce the costs of running multiple servers and simplifies the management process by having everything in one place. With this approach, you can confidently focus on growing your business and online presence without worrying about the technical details of managing multiple domains.`,
   },
   {
     icon: <MdVerifiedUser />,
     title: "100% Satisfaction Guarantee",
-    description: ` Midline Media Solution, we value customer satisfaction and strive to provide the best
-    solutions to our clients. To ensure our customers are happy with our services, we offer a
-    100% satisfaction guarantee. Our professionals establish relationships with customers
-    and handle their concerns to increase satisfaction and loyalty. 
-    `,
+    description: `When you host and manage multiple websites on a single server or hosting account, you can keep things simple and provide service for multiple domains. This is a smart and efficient solution for people and businesses who manage multiple brands, projects, or online initiatives. It saves you money and simplifies the management process by having everything in one place. You don't need to worry about all the technical details of managing multiple domains, so you can focus on what's important - growing your business and online presence.`,
   },
 ];
 
@@ -46,18 +32,18 @@ const AboutCards = () => {
   return (
     <section className='section bg-gray' id='about-us'>
       <div className='container'>
-        <div className='row'>
-          <div className='col-12 text-center'>
-            <h2 className='section-title'>Expert in Call Center Services</h2>
+        <div className='row '>
+          <div className='text-center py-5'>
+            <h3>Expert in Call Center Services</h3>
           </div>
-        </div>
-        <div className='row'>
           {serviceData.map((item, index) => (
-            <div key={index} className='col-xl-6 col-lg-4 col-sm-6 mb-4' data-aos="fade-right">
-              <div className='bg-white py-5 px-4 h-100 text-center shadow rounded-4' >
-                <div className='icon-bg mb-4 water-wave '>
-                  <i className='icon '>{item.icon}</i>
-                </div>
+            <div
+              key={index}
+              className='col-xl-6 col-lg-4 col-sm-6 mb-4'
+              data-aos='fade-right'
+            >
+              <div className='bg-white py-5 px-4 h-100 text-center shadow rounded-4'>
+                <div className='icon-bg icon mb-4 water-wave '>{item.icon}</div>
                 <h4 className='mb-4'>{item.title}</h4>
                 <p style={{ textAlign: "justify" }}>{item.description}</p>
               </div>

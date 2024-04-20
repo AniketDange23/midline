@@ -134,7 +134,11 @@ a {
   border-color: #fff;
   color: #fff;
 }
-
+.project-link:hover {
+  background: #26589e;
+  color: white;
+  text-decoration: none;
+}
 .button {
   color: white;
   background: #26589e;
@@ -225,6 +229,9 @@ a.text-white:hover,
 a.text-light:hover,
 a.text-dark:hover {
   color: #26589e !important;
+}
+.hero-slider{
+  margin-top: -75px;
 }
 
 /* section */
@@ -635,11 +642,11 @@ a.text-dark:hover {
 
 /* form control */
 .form-control {
-  height: 55px;
-  padding: 0 30px;
+  height: 45px;
+  padding: 0 20px;
 }
 .form-control-sm {
-  height: 45px;
+  height: 35px;
 }
 .form-control:focus {
   box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1);
