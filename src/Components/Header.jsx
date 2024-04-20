@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-
+import './header.css'
 const Header = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const [sticky, setSticky] = useState(false);
@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <div className={`navigation  ${sticky ? "fixed-top" : ""}`}>
-      <div className="container">
+      <div className="container-fluid px-4">
         <nav className="navbar navbar-expand-lg   " >
           <a className="navbar-brand" href="/">
             <img

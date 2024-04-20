@@ -36,6 +36,7 @@ const Home = () => {
 
   return (
     <div className="container-fluid">
+{/* <img src="/bg.svg" alt="" style={{ position: "absolute", zIndex: "-2" }} /> */}
       <div className="row align-items-center justify-content-center">
         <div className="col-lg-5 py-3 px-3">
           <h3 className="mb-3 position-relative" >
@@ -65,7 +66,7 @@ const Home = () => {
                 key={index}
               >
                 <div className="card">
-                  <h5 className="icon-bg text-white water-wave text-center p-2 count" data-count={item.count}>
+                  <h5 className="icon-bg text-white water-wave text-center py-4 count" data-count={item.count}>
                     0
                   </h5>
                   <h4>{item.title}</h4>

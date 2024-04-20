@@ -32,7 +32,7 @@
   bottom: 80px; /* Adjust as needed */
   right: 20px; /* Adjust as needed */
   color: rgb(255, 255, 255);
-  background-color: rgba(17, 42, 132, 0.822); /* Adjust color */
+  background-color: rgb(17, 42, 132); /* Adjust color */
 
 
 }
@@ -40,7 +40,15 @@
 .call-btn:hover {
   color: aliceblue;
   border: 1px solid #eee;
-  background-color: rgba(16, 31, 88, 0.822); /* Adjust color */
+  background-color: rgb(16, 30, 88); /* Adjust color */
+}
+.chat-btn {
+  bottom: 200px; /* Adjust as needed */
+  right:  20px; /* Adjust as needed */
+  color: rgb(255, 255, 255);
+  background-color: rgb(87, 10, 120); /* Adjust color */
+
+
 }
 
 .back-to-top-btn {

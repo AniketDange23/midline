@@ -1,0 +1,39 @@
+.navigation {
+    position: relative; /* Required for stacking context */
+    background: rgba(255, 255, 255, 0.295); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+  }
+  
+  .fixed-top {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+box-shadow: 2px 2px 5px #4c4c4c2e;
+    z-index: 1000; /* Adjust as needed */
+  }
+  
+ 
+  .navbar-nav {
+    margin-left: auto; /* Align to the right */
+    align-items: center;
+    /* Add your styles for the navbar navigation */
+  }
+
+  
+  .nav-link {
+    color: #161C97;
+    margin:  5px;
+  }
+  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+  
+    border-bottom: 2px solid #161c97; /* Adjust color */
+
+  }
+
+  .nav-link:hover {
+    color: #161c97;
+    border-bottom: 2px solid #161c97; /* Adjust color */
+  }
+  

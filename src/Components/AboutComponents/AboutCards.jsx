@@ -4,8 +4,6 @@ import { BiSupport } from "react-icons/bi";
 import { FaUsersGear } from "react-icons/fa6";
 import { MdVerifiedUser } from "react-icons/md";
 import { MdGroups2 } from "react-icons/md";
-import AOS from "aos";
-import { useEffect } from "react";
 const serviceData = [
   {
     icon: <BiSupport />,
@@ -45,10 +43,6 @@ const serviceData = [
 ];
 
 const AboutCards = () => {
-
-  useEffect(() => {
-    AOS.init(); // Initialize AOS
-  }, []);
   return (
     <section className='section bg-gray' id='about-us'>
       <div className='container'>
@@ -59,8 +53,8 @@ const AboutCards = () => {
         </div>
         <div className='row'>
           {serviceData.map((item, index) => (
-            <div key={index} data-aos="flip-down" className='col-xl-6 col-lg-4 col-sm-6 mb-4'>
-              <div className='bg-white py-5 px-4 h-100 text-center shadow'>
+            <div key={index} className='col-xl-6 col-lg-4 col-sm-6 mb-4' data-aos="fade-right">
+              <div className='bg-white py-5 px-4 h-100 text-center shadow rounded-4' >
                 <div className='icon-bg mb-4 water-wave '>
                   <i className='icon '>{item.icon}</i>
                 </div>

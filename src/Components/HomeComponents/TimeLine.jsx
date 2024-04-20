@@ -13,6 +13,7 @@ import { AiOutlineCheckCircle } from "react-icons/ai";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { AiOutlineMessage } from "react-icons/ai";
+import { MdPhonelinkRing } from 'react-icons/md';
 
 const timelineData = [
   {
@@ -27,7 +28,7 @@ const timelineData = [
   },
   {
     "title": "Introduction Call",
-    "icon": <AiOutlinePhone />,
+    "icon": <MdPhonelinkRing />,
     "description": "Make the first call to introduce yourself and your services. Keep the conversation friendly and brief to pique interest."
   },
   {
@@ -89,7 +90,7 @@ const TimeLine = () => {
           className={`vertical-timeline-element--${item.type}`}
           contentStyle={{ background: '#fff' , boxShadow:' 2px 2px 3px 3px #e5e5e5', color: '#000' }}
           contentArrowStyle={{ borderRight: '8px solid #f9f9f9', }}
-          iconStyle={{ background: '#007bff', color: '#fff' }} // assuming blue color for all icons
+          iconStyle={{ background: '#26589E', color: '#fff' }} // assuming blue color for all icons
           icon={item.icon} // Using the icon from the timelineData array
         >
         
