@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const data = [
   {
@@ -60,7 +61,7 @@ const Home = () => {
           </p>
           <br />
           <button className="button">
-            <a href="/services">Know More</a>
+            <Link to="/services">Know More</Link>
           </button>
         </div>
         <div className="col-lg-6 col-md-8 py-">
