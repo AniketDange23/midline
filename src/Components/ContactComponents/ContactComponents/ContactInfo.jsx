@@ -24,7 +24,7 @@ const ContactInfo = () => {
     {
       icon: <FaEnvelope />,
       title: "Message Us",
-      items: ["info@elioratechno.com", "sales@elioratechno.com"],
+      items: ["sales@elioratechno.com"],
     },
   ];
 
@@ -33,7 +33,7 @@ const ContactInfo = () => {
       <div className='row'>
         {contactInfoData.map((info, index) => (
           <div key={index} className='col-md-4 mb-2 mb-md-0'>
-            <div className='bg-white shadow h-100 text-center p-5 px-md-1 px-lg-0'>
+            <div className='bg-gray shadow h-100 text-center py-5 px-md-1 px-lg-0'>
               <div className='text-primary icon-lg mb-2'>{info.icon}</div>
               <h4 className='mb-2'>{info.title}</h4>
               <ul className='list-unstyled'>
