@@ -22,7 +22,7 @@ p,
 .paragraph {
   text-align: justify;
   font-weight: 500;
-  color: #808080;
+  color: #353535;
   line-height: 1.5;
   font-family: "Open Sans", sans-serif;
 }
@@ -231,7 +231,12 @@ a.text-dark:hover {
   color: #26589e !important;
 }
 
+.box{
+border: 2px solid #1D5DB6;
+  border-radius: 10px;
+  padding: 10px;
 
+}
 /* section */
 .section {
   padding-top: 150px;
