@@ -86,13 +86,13 @@ const ContactSection = () => {
                   placeholder="Contact Number"
                 />
               </div>
-              <div className="col-12">
+              <div className="col-12 ">
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="form-control border-1 rounded-2 box-shadow mb-4"
+                  className="form-control border-1 rounded-2 box-shadow mb-4 py-2"
                   rows="6"
                   placeholder="Message"
                 ></textarea>
