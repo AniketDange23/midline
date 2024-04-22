@@ -18,7 +18,7 @@ const OurServices = () => {
         <div className='col-lg-6  mb-5   order-lg-1 '>
           <div className='box  mb-4 p-3 shadow'>
             <div style={{ textAlign: "justify" }}>
-              <h3 style={{ width: "max-content" }} className="mb-3">Cold Calling</h3>
+              <h4 style={{ width: "max-content" }} className="mb-3">Cold Calling</h4>
 
               <p>
                 Cold calling is a sales technique where a salesperson makes
@@ -36,7 +36,7 @@ const OurServices = () => {
           </div>
           <div style={{ textAlign: "justify" }} className='mb-5 p-3 shadow box'>
             <div>
-              <h3 className='mb-3'>Appointment setting</h3>
+              <h4 className='mb-3'>Appointment setting</h4>
             </div>
 
             <p>

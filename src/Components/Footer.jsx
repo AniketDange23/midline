@@ -3,6 +3,7 @@ import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { IoMdArrowDropright } from "react-icons/io";
 import { IoLocationOutline, IoMail } from "react-icons/io5";
 import { MdLocalPhone } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,9 +12,9 @@ const Footer = () => {
         <div className='container'>
           <div className='row justify-content-between'>
             <div className='col-lg-5 mb-5 mb-lg-0'>
-              <a className='mb-4 d-inline-block LogoImage' href='#'>
+              <Link className='mb-4 d-inline-block LogoImage' to='#'>
                 <img className='img-fluid' src='/logo1.png' alt='' />
-              </a>
+              </Link>
               <p className='text-light'>
                 Midline Media Solutions was founded in 2020. Since then, we
                 have evolved into a versatile and forward-thinking organization
@@ -26,19 +27,19 @@ const Footer = () => {
               <h4 className='text-white mb-4'>Follow Us On</h4>
               <ul className='list-inline social-icon-alt'>
                 <li className='list-inline-item'>
-                  <a className='hover-ripple' href='#'>
+                  <Link className='hover-ripple' to='#'>
                     <FaFacebook style={{ fontSize: "22px" }} />
-                  </a>
+                  </Link>
                 </li>
                 <li className='list-inline-item'>
-                  <a className='hover-ripple' href='#'>
+                  <Link className='hover-ripple' to='#'>
                     <FaInstagram style={{ fontSize: "22px" }} />
-                  </a>
+                  </Link>
                 </li>
                 <li className='list-inline-item'>
-                  <a className='hover-ripple' href='#'>
+                  <Link className='hover-ripple' to='#'>
                     <FaLinkedin style={{ fontSize: "22px" }} />
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -48,34 +49,34 @@ const Footer = () => {
                   <h4 className='text-white mb-4'>Services</h4>
                   <ul className='list-unstyled '>
                     <li className='mb-3 text-light'>
-                      <a className='text-light d-block' href='/'>
+                      <Link className='text-light d-block' to='/'>
                         <IoMdArrowDropright style={{ marginRight: "2px" }} />
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-3 text-light'>
-                      <a className='text-light d-block' href='/about'>
+                      <Link className='text-light d-block' to='/about'>
                         <IoMdArrowDropright style={{ marginRight: "2px" }} />
                         About
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-3 text-light'>
-                      <a className='text-light d-block' href='/services'>
+                      <Link className='text-light d-block' to='/services'>
                         <IoMdArrowDropright style={{ marginRight: "2px" }} />
                         Services
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-3 text-light'>
-                      <a className='text-light d-block' href='/healthproject'>
+                      <Link className='text-light d-block' to='/healthproject'>
                         <IoMdArrowDropright style={{ marginRight: "2px" }} />
                         Projects
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-3 text-light'>
-                      <a className='text-light d-block' href='/contact'>
+                      <Link className='text-light d-block' to='/contact'>
                         <IoMdArrowDropright style={{ marginRight: "2px" }} />
                         Contact
-                      </a>
+                      </Link>
                     </li>
                     {/* Add other service links */}
                   </ul>
@@ -84,27 +85,27 @@ const Footer = () => {
                   <h4 className='text-white mb-4'>Contact Info</h4>
                   <ul className='list-unstyled'>
                     <li className='mb-3 text-light'>
-                      <a className='text-light d-block' href='#'>
+                      <Link className='text-light d-block' to='#'>
                         <IoLocationOutline /> Opposite Bank of Baroda, Ward
                         Number 3, Parsodi, Trimurtee Nagar, Nagpur, Maharashtra
                         440022
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-3 text-light'>
-                      <a
+                      <Link
                         className='text-light d-block'
-                        href='mailto:sales@midlinesmedia.com'
+                        to='mailto:sales@midlinesmedia.com'
                       >
                         <IoMail /> sales@midlinesmedia.com
-                      </a>
+                      </Link>
                     </li>
                     <li className='mb-3 text-light'>
-                      <a
+                      <Link
                         className='text-light d-block'
-                        href='callto:+91 8830826434'
+                        to='callto:+91 8830826434'
                       >
                         <MdLocalPhone /> +91 8830826434
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -145,17 +146,17 @@ const Footer = () => {
             <div className='col-md-6 text-center  '>
               <ul className='list-inline'>
                 <li className='list-inline-item mx-0'>
-                  <a
+                  <Link
                     className='d-inline-block px-3 text-white border-right'
-                    href='#'
+                    to='#'
                   >
                     Terms of Service
-                  </a>
+                  </Link>
                 </li>
                 <li className='list-inline-item mx-0'>
-                  <a className='d-inline-block px-3 text-white' href='#'>
+                  <Link className='d-inline-block px-3 text-white' to='#'>
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
