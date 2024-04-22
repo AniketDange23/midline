@@ -77,9 +77,9 @@ const OurServices = () => {
             />
           </div>
         </div>
-        <div className='col-lg-6  order-lg-2 order-1 mb-3 px-5 '>
+        <div className='col-lg-6  order-lg-2 order-1 mb-3 '>
           <div style={{ textAlign: "justify" }} className='mb-5 shadow p-3 box'>
-            <h3> CUSTOMER SERVICES</h3>
+            <h4 className="mb-3"> CUSTOMER SERVICES</h4>
             <p>
               Customer service refers to the assistance and support provided to
               customers before, during, and after they purchase a product or
@@ -95,7 +95,7 @@ const OurServices = () => {
           </div>
           <div className='text-center md-3 p-3 shadow box'>
             <div style={{ textAlign: "justify" }}>
-              <h3>Sales</h3>
+              <h4 className="mb-3">Sales</h4>
               <span>
                 Sales refers to the process of persuading, convincing, and
                 ultimately securing commitments from potential customers to
