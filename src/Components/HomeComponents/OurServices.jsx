@@ -13,7 +13,7 @@ const OurServices = () => {
       </h2>
       <h4 className='mb-4 text-center px-2'>What We Offer</h4>
       <br />
-      <div className='row ' data-aos='fade-down'>
+      <div className='row align-content-center text-center justify-content-center  ' data-aos='fade-down' >
         <div className='col-lg-6  mb-5 px-5  order-lg-1 bg-gray'>
           <div style={{ textAlign: "justify" }} className='mb-5'>
             <h3 style={{ width: "max-content" }}>Cold Calling</h3>
@@ -43,13 +43,13 @@ const OurServices = () => {
             </p>
           </div>
         </div>
-        <div className='col-lg-5 mb-3   order-1 align-content-center text-center justify-content-center'>
+        <div className='col-lg-5 mb-3  py-2  order-1 '>
           <div className='feature-img-bg '>
             <img
               className='img-fluid'
               src='/images/h2.jpg'
               alt='feature-image'
-              style={{ width: "500px" }}
+              style={{ width: "450px" }}
             />
           </div>
         </div>
