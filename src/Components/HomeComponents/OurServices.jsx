@@ -13,13 +13,9 @@ const OurServices = () => {
       </h2>
       <h4 className='mb-4 text-center px-2'>What We Offer</h4>
       <br />
-      <div className='row '>
-        <div className='col-lg-6  mb-5 px-5  order-lg-1'>
-          <div
-            style={{ textAlign: "justify" }}
-            data-aos='fade-down'
-            className='mb-5'
-          >
+      <div className='row ' data-aos='fade-down'>
+        <div className='col-lg-6  mb-5 px-5  order-lg-1 bg-gray'>
+          <div style={{ textAlign: "justify" }} className='mb-5'>
             <h3 style={{ width: "max-content" }}>Cold Calling</h3>
 
             <p>
@@ -47,8 +43,8 @@ const OurServices = () => {
             </p>
           </div>
         </div>
-        <div className='col-lg-5 mb-3  order-1 align-content-center text-center justify-content-center'>
-          <div className='feature-img-bg'>
+        <div className='col-lg-5 mb-3   order-1 align-content-center text-center justify-content-center'>
+          <div className='feature-img-bg '>
             <img
               className='img-fluid'
               src='/images/h2.jpg'
@@ -59,18 +55,21 @@ const OurServices = () => {
         </div>
       </div>
       {/* second */}
-      <div className='row  ' data-aos='fade-down'>
-        <div className='col-lg-5 order-lg-1 order-2 '>
-          <div className='feature-img-bg '>
+      <div
+        className='row  d-flex justify-content-around align-content-center text-center py-4 '
+        data-aos='fade-down'
+      >
+        <div className='col-lg-5 order-lg-1 order-2  '>
+          <div className='feature-img-bg mt-5 '>
             <img
               className='img-fluid '
               src='/images/h1.jpg'
               alt='feature-image'
-              style={{ width: "500px" }}
+              style={{ width: "800px" }}
             />
           </div>
         </div>
-        <div className='col-lg-6  order-lg-2 order-1 mb-3 px-5'>
+        <div className='col-lg-6  order-lg-2 order-1 mb-3 px-5 bg-gray'>
           <ul className='list-unstyled'>
             <li className='d-flex align-items-center '>
               <div style={{ textAlign: "justify" }} className='mb-5'>
@@ -84,9 +83,7 @@ const OurServices = () => {
                   business or organization. Excellent customer service is
                   essential for businesses to attract and retain customers,
                   differentiate themselves from competitors, and build a strong
-                  reputation for quality and reliability. It plays a crucial
-                  role in enhancing the overall customer experience and driving
-                  long-term success.
+                  reputation for quality and reliability.
                 </p>
               </div>
             </li>
@@ -95,8 +92,15 @@ const OurServices = () => {
               <div style={{ textAlign: "justify" }}>
                 <h3>Sales</h3>
                 <span>
-                Sales refers to the process of persuading, convincing, and ultimately securing commitments from potential customers to purchase products or services offered by a business. It involves a series of interactions and activities aimed at identifying, attracting, engaging, and converting leads into paying customers.  Customer service can be delivered through various channels, including in-person interactions, phone calls, emails, live chat, social media, and self-service portals. Companies prioritizing excellent customer service often see higher customer satisfaction levels, increased customer loyalty, and positive word-of-mouth recommendations, which can contribute to long-term business success.
-
+                  Sales refers to the process of persuading, convincing, and
+                  ultimately securing commitments from potential customers to
+                  purchase products or services offered by a business. It
+                  involves a series of interactions and activities aimed at
+                  identifying, attracting, engaging, and converting leads into
+                  paying customers. Customer service can be delivered through
+                  various channels, including in-person interactions, phone
+                  calls, emails, live chat, social media, and self-service
+                  portals.
                 </span>
               </div>
             </li>

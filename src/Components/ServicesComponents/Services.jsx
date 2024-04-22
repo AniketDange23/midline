@@ -35,7 +35,7 @@ const Services = () => {
     AOS.init(); // Initialize AOS
   }, []);
   return (
-    <div className='container-fluid  bg-gray'>
+    <div className='container-fluid m-0  bg-gray'>
       <div className='row'>
         <div className='col-12 text-center'>
           <h3 className='py-5'>Best Services We Provide</h3>

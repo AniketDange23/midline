@@ -20,7 +20,7 @@ const OurMission = () => {
 
   return (
     <div className="bg-gray">
-      <div className="container py-5">
+      <div className="container py-5 hover-icon">
         <div className="row justify-content-center">
           {serviceData.map((item, index) => (
             <div

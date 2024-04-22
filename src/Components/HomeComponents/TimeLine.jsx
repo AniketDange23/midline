@@ -1,8 +1,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import './TimeLine.css'
+import './TimeLine.css';
 import { FaCheckCircle, FaDatabase, FaPhoneAlt, FaQuestionCircle, FaRegHandshake, FaTools, FaUserAlt } from "react-icons/fa";
-
 import { FaEarDeaf } from 'react-icons/fa6';
 
 const timelineData = [
@@ -42,29 +41,25 @@ const timelineData = [
     icon: <FaCheckCircle />
   }
 ];
+
 const TimeLine = () => {
   return (
     <div className="container py-5">
-    <h3 className='text-center py-4'>Our Process</h3>
-       <VerticalTimeline>
-      {timelineData.map((item, index) => (
-        
-        <VerticalTimelineElement
-          key={index}
-          className={`vertical-timeline-element--${item.type}`}
-          contentStyle={{ background: '#fff' , boxShadow:' 2px 2px 3px 3px #e5e5e5', color: '#000' }}
-          contentArrowStyle={{ borderRight: '8px solid #f9f9f9', }}
-          iconStyle={{ background: '#26589E', color: '#fff' }} // assuming blue color for all icons
-          icon={item.icon} // Using the icon from the timelineData array
-        >
-        
-          <h4 className="vertical-timeline-element-title">{item.step}</h4>
-          <p>{item.description}</p>
-        </VerticalTimelineElement>
-      ))}
-    </VerticalTimeline>
+      <h3 className='text-center py-4'>Our Process</h3>
+      <VerticalTimeline>
+        {timelineData.map((item, index) => (
+          <VerticalTimelineElement
+            key={index}
+            className={`vertical-timeline-element--${item.type}`}
+            iconStyle={{ background: '#26589E', color: '#fff' }} // assuming blue color for all icons
+            icon={item.icon} // Using the icon from the timelineData array
+          >
+            <h4 className="vertical-timeline-element-title">{item.step}</h4>
+            <p>{item.description}</p>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
     </div>
-   
   );
 };
 

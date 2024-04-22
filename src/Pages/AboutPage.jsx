@@ -13,7 +13,9 @@ const AboutPage = () => {
   return (
     <div>
       <PageHeader/>
-    <AboutSection/>    <AboutCards/>
+    <AboutSection/>  
+      
+      <AboutCards/>
 
     <TimelineCards />
 

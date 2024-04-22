@@ -1,4 +1,4 @@
-import FactsSection from "../Components/HomeComponents/FactsSection.jsx";
+// import FactsSection from "../Components/HomeComponents/FactsSection.jsx";
 import FeatureSection from "../Components/HomeComponents/FeatureSection.jsx";
 import HeroSlider from "../Components/HomeComponents/HeroSlider.jsx";
 import OurServices from "../Components/HomeComponents/OurServices.jsx";
@@ -13,7 +13,7 @@ const HomePage = () => {
     <FeatureSection/>
     <OurServices/>
     <OurMission/>
-    <FactsSection/>
+    {/* <FactsSection/> */}
     <PartnersSection/> 
     </div>
   )
