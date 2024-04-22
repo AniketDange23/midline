@@ -30,7 +30,7 @@ const data = [
   },
 ];
 
-const Home = () => {
+const FeatureSection = () => {
   const [counts, setCounts] = useState(Array(data.length).fill(0));
 
   useEffect(() => {
@@ -87,4 +87,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default FeatureSection;

@@ -1,18 +1,18 @@
-// import FactsSection from "../Components/HomeComponents/FactsSection.jsx";
-import FeatureSection from "../Components/HomeComponents/FeatureSection.jsx";
-import HeroSlider from "../Components/HomeComponents/HeroSlider.jsx";
-import OurServices from "../Components/HomeComponents/OurServices.jsx";
-import PartnersSection from "../Components/HomeComponents/PartnersSection.jsx";
+
+import HeroSlider from './../Components/HomeComponents/HeroSlider';
+import OurServices from './../Components/HomeComponents/OurServices';
 import OurMission from './../Components/HomeComponents/OurMission';
+import PartnersSection from './../Components/HomeComponents/PartnersSection';
+import FeatureSection from '../Components/HomeComponents/FeatureSection';
 
 const HomePage = () => {
   return (
     <div>
       
     <HeroSlider/>
-    <FeatureSection/>
+    <FeatureSection />
     <OurServices/>
-    <OurMission/>
+    <OurMission />
     {/* <FactsSection/> */}
     <PartnersSection/> 
     </div>

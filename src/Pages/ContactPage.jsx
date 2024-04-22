@@ -1,24 +1,24 @@
-import { useEffect } from "react"
-// import ContactPageHeader from "../Components/ContactComponents/ContactPageHeader"
-import { useGlobalContext } from "../Components/context"
-import ContactInfo from "../Components/ContactComponents/ContactComponents/ContactInfo";
-import ContactSection from './../Components/ContactComponents/ContactComponents/ContactSection';
+import React, { useEffect } from "react";
+
 import PageHeader from "../Components/PageHeader";
+import { useGlobalContext } from "../Components/context";
+import ContactInfo from './../Components/ContactComponents/ContactComponents/ContactInfo';
+import ContactSection from './../Components/ContactComponents/ContactComponents/ContactSection';
 
 const ContactPage = () => {
+  const { updateContactPage } = useGlobalContext();
 
-  const {updateContactPage} = useGlobalContext();
-
-  useEffect(()=> updateContactPage(), []);
+  useEffect(() => {
+    updateContactPage();
+  }, []); 
 
   return (
     <>
-      {/* <ContactPageHeader/> */}
-      <PageHeader/>
-      <ContactInfo/>
-      <ContactSection/>
+      <PageHeader />
+      <ContactInfo />
+      <ContactSection />
     </>
-  )
-}
+  );
+};
 
-export default ContactPage
+export default ContactPage;

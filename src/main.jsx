@@ -3,19 +3,16 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import ContactPage from "./Pages/ContactPage.jsx";
-// import ProjectPage from "./Pages/ProjectPage.jsx";
-import ServicesPage from "./Pages/ServicesPage.jsx";
-import AboutPage from "./Pages/AboutPage.jsx";
 
-
-import Home from "./Pages/HomePage.jsx";
 import { AppProvider } from "./Components/context.jsx";
+import ContactPage from './Pages/ContactPage';
 import HealthInsurance from './Components/ProjectsComponents/ProjectsComponents/HealthInsurance';
-import MedicareSupplement from './Components/ProjectsComponents/ProjectsComponents/MedicareSupplement';
 import FinalExpense from './Components/ProjectsComponents/ProjectsComponents/FinalExpense';
+import HomePage from './Pages/HomePage';
 import B2BLeadGeneration from './Components/ProjectsComponents/ProjectsComponents/B2BLeadGeneration';
-
+import ServicesPage from './Pages/ServicesPage';
+import AboutPage from './Pages/AboutPage';
+import MedicareSupplement from './Components/ProjectsComponents/ProjectsComponents/MedicareSupplement'
 
 const router = createBrowserRouter([
   {
@@ -24,12 +21,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <HomePage />,
       },
 
       {
         path: "/contact",
-        element: <ContactPage />,
+        element: <ContactPage/>,
       },
 
       // {
@@ -57,20 +54,19 @@ const router = createBrowserRouter([
         element: <B2BLeadGeneration />,
       },
 
-
       {
         path: "/services",
         element: <ServicesPage />,
       },
       {
-        path:"/about",
-        element:<AboutPage/>
-      }
+        path: "/about",
+        element: <AboutPage />,
+      },
     ],
   },
 ]);
 ReactDOM.createRoot(document.getElementById("root")).render(
   <AppProvider>
-      <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </AppProvider>
 );
