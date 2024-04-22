@@ -28,7 +28,7 @@ const ContactSection = () => {
               ></iframe>{" "}
             </div>
           </div>
-          <div className='col-md-7' data-aos="fade-up"
+          <div className='col-md-7' 
      data-aos-duration="3000" id='form'>
             <h3 className='section-title'>Contact Form</h3>
             <form className='row'>
@@ -37,7 +37,7 @@ const ContactSection = () => {
                   type='text'
                   name='name'
                   id='name'
-                  className='form-control border-0 rounded-0 box-shadow mb-4'
+                  className='form-control border-1 rounded-2 box-shadow mb-4'
                   placeholder='Name'
                 />
               </div>
@@ -46,7 +46,7 @@ const ContactSection = () => {
                   type='email'
                   name='mail'
                   id='mail'
-                  className='form-control border-0 rounded-0 box-shadow mb-4'
+                  className='form-control border-1 rounded-2 box-shadow mb-4'
                   placeholder='Email'
                 />
               </div>
@@ -55,7 +55,7 @@ const ContactSection = () => {
                   type='text'
                   name='phone'
                   id='phone'
-                  className='form-control border-0 rounded-0 box-shadow mb-4'
+                  className='form-control border-1 rounded-2 box-shadow mb-4'
                   placeholder='Phone'
                 />
               </div>
@@ -64,7 +64,7 @@ const ContactSection = () => {
                   type='text'
                   name='subject'
                   id='subject'
-                  className='form-control border-0 rounded-0 box-shadow mb-4'
+                  className='form-control border-1 rounded-2 box-shadow mb-4'
                   placeholder='Subject'
                 />
               </div>
@@ -72,7 +72,7 @@ const ContactSection = () => {
                 <textarea
                   name='message'
                   id='message'
-                  className='form-control border-0 rounded-0 box-shadow mb-5 py-3 px-4'
+                  className='form-control border-1 rounded-2 box-shadow mb-5 py-3 px-4'
                   placeholder='Your Message'
                 ></textarea>
               </div>

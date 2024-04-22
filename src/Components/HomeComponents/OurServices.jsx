@@ -8,7 +8,7 @@ const OurServices = () => {
   }, []);
   return (
     <div className='container  my-5'>
-      <h2 className='text-center mb-4 px-2' data-aos='fade-down'>
+      <h2 className='text-center mb-4 px-2' >
         Our Services
       </h2>
       <h4 className='mb-4 text-center px-2'>What We Offer</h4>
