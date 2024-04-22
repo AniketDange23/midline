@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const ContactSection = () => {
-
-  const [formData, setFormData] = useState({
+  const initialState = {
     username: "",
     email: "",
     contact: "",
     message: "",
-  });
+  };
+
+  const [formData, setFormData] = useState(initialState);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,18 +20,21 @@ const ContactSection = () => {
 
     const { username, email, contact, message } = formData;
 
-    axios.post('http://localhost:3001/save', { username, email, contact, message })
-      .then(result => console.log(result))
-      .catch(err => console.log(err));
+    axios
+      .post("http://localhost:3001/save", { username, email, contact, message })
+      .then((result) => {
+        console.log(result);
+        // Clear form data
+        setFormData(initialState);
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
     <section className="section">
       <div className="container">
         <div className="row">
-          <div className="col-md-5 mb-5 mb-md-0">
-            {/* Google Map */}
-          </div>
+          <div className="col-md-5 mb-5 mb-md-0">{/* Google Map */}</div>
           <div className="col-md-7">
             <h3 className="section-title">Contact Form</h3>
             <form className="row" onSubmit={handleSubmit}>
