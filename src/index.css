@@ -841,3 +841,17 @@ box-shadow: 2px 2px 3px 3px #e5e5e5;
 .project-item:hover .hover-overlay a {
   transform: translateY(-50%) scale(1);
 }
+
+
+
+/* Style for the success toast message */
+.Toastify__toast--success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Positioning the success toast message */
+.Toastify__toast-container--bottom-right {
+  bottom: 10px;
+  right: 10px;
+}

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import PageHeader from './../Components/PageHeader';
-import ServiceSection from './../Components/ProjectsComponents/ProjectsComponents/ServiceSection';
 import { useGlobalContext } from "../Components/context";
+import Services from "../Components/ServicesComponents/Services";
 
 const ServicesPage = () => {
   const {updateServicesPage} = useGlobalContext();
@@ -10,7 +10,7 @@ const ServicesPage = () => {
   return (
     <div>
     <PageHeader/>
-      <ServiceSection/>
+      <Services/>
     </div>
   )
 }

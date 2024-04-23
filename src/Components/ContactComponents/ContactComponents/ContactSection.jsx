@@ -17,9 +17,9 @@ const ContactSection = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const notifySuccess = () => toast.success("Thanks for visiting! Have a great day.");
 
+  const handleSubmit = async () => {
     const { username, email, contact, message } = formData;
 
     axios
@@ -28,8 +28,8 @@ const ContactSection = () => {
         console.log(result);
         // Clear form data
         setFormData(initialState);
-        // Show toast message
-        toast.success("Thanks for visiting! Have a great day.");
+        // Show success toast message
+        notifySuccess();
       })
       .catch((err) => console.log(err));
   };
@@ -52,7 +52,7 @@ const ContactSection = () => {
           </div>
           <div className="col-md-6">
             <h3 className="section-title">Contact Form</h3>
-            <form className="row" onSubmit={handleSubmit}>
+            <div className="row">
               <div className="col-md-6">
                 <input
                   type="text"
@@ -92,17 +92,17 @@ const ContactSection = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="form-control border-1 rounded-2 box-shadow mb-4 py-2"
+                  className="form-control border-1 rounded-2 box-shadow mb-4 py-3"
                   rows="6"
                   placeholder="Message"
                 ></textarea>
               </div>
               <div className="col-12">
-                <button type="submit" className="button">
+                <button type="button" onClick={handleSubmit} className="button">
                   Send Message
                 </button>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
