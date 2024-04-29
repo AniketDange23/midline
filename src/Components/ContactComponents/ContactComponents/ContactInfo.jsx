@@ -32,8 +32,8 @@ const ContactInfo = () => {
     <div className='container py-5' data-aos='zoom-in-left'>
       <div className='row'>
         {contactInfoData.map((info, index) => (
-          <div key={index} className='col-md-4 mb-2 mb-md-0'>
-            <div className='bg-gray shadow h-100 text-center py-5 px-md-1 px-lg-0'>
+          <div key={index} className='col-md-4 mb-2  mb-md-0'>
+            <div className='border rounded shadow h-100 text-center py-5 px-md-1 px-lg-0'>
               <div className='text-primary icon-lg mb-2'>{info.icon}</div>
               <h4 className='mb-2'>{info.title}</h4>
               <ul className='list-unstyled'>

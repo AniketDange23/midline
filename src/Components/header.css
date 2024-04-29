@@ -27,13 +27,13 @@ box-shadow: 2px 2px 5px #4c4c4c2e;
     margin:  5px;
   }
   .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: #2832f4;
-    border-bottom: 3px solid #2832f4; 
+    color: #26589e;
+    border-bottom: 3px solid #26589e; 
   }
 
   .nav-link:hover {
    /* Adjust color */
-   color: #2832f4;
-   border-bottom: 3px solid #2832f4; 
+   color: #26589e;
+   border-bottom: 3px solid #26589e; 
   }
   

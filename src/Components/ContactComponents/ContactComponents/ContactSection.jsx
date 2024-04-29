@@ -1,41 +1,69 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 
 const ContactSection = () => {
   const initialState = {
     username: "",
     email: "",
     contact: "",
-    message: "",
+    companyName: "",
+    message: ""
   };
 
   const [formData, setFormData] = useState(initialState);
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    // Clear error message when user starts typing
+    setErrors({ ...errors, [e.target.name]: "" });
   };
 
-  const notifySuccess = () => toast.success("Thanks for visiting! Have a great day.");
+  const notifySuccess = () =>
+   alert("Thanks for visiting! Have a great day.");
+
+  const validateForm = () => {
+    const errors = {};
+
+    if (!formData.username.trim()) {
+      errors.username = "Name is required";
+    }
+    if (!formData.email.trim()) {
+      errors.email = "Email is required";
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+      errors.email = "Email is invalid";
+    }
+    if (!formData.contact.trim()) {
+      errors.contact = "Contact Number is required";
+    } else if (!/^\d{10}$/.test(formData.contact)) {
+      errors.contact = "Contact Number is invalid";
+    }
+
+    setErrors(errors);
+
+    return Object.keys(errors).length === 0;
+  };
 
   const handleSubmit = async () => {
-    const { username, email, contact, message } = formData;
+    const isValid = validateForm();
 
-    axios
-      .post("http://localhost:3001/save", { username, email, contact, message })
-      .then((result) => {
-        console.log(result);
-        // Clear form data
-        setFormData(initialState);
-        // Show success toast message
-        notifySuccess();
-      })
-      .catch((err) => console.log(err));
+    if (isValid) {
+      axios
+        .post("http://localhost:3001/save", formData)
+        .then((result) => {
+          console.log(result);
+          // Clear form data
+          setFormData(initialState);
+          // Show success toast message
+          notifySuccess();
+        })
+        .catch((err) => console.log(err));
+    }
   };
 
   return (
-    <section className="section">
+    <section className="section " id="form">
       <div className="container">
         <div className="row">
           <div className="col-md-6 mb-5 mb-md-0">
@@ -50,7 +78,7 @@ const ContactSection = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6" >
             <h3 className="section-title">Contact Form</h3>
             <div className="row">
               <div className="col-md-6">
@@ -63,27 +91,46 @@ const ContactSection = () => {
                   className="form-control border-1 rounded-2 box-shadow mb-4"
                   placeholder="Name"
                 />
+                {errors.username && (
+                  <div className="text-danger">{errors.username}</div>
+                )}
               </div>
               <div className="col-md-6">
                 <input
                   type="email"
                   name="email"
-                  value={formData.email}
                   required
+                  value={formData.email}
                   onChange={handleChange}
                   className="form-control border-1 rounded-2 box-shadow mb-4"
                   placeholder="Email"
                 />
+                {errors.email && (
+                  <div className="text-danger">{errors.email}</div>
+                )}
               </div>
               <div className="col-md-6">
                 <input
                   type="tel"
                   name="contact"
-                  value={formData.contact}
                   required
+                  value={formData.contact}
                   onChange={handleChange}
                   className="form-control border-1 rounded-2 box-shadow mb-4"
                   placeholder="Contact Number"
+                />
+                {errors.contact && (
+                  <div className="text-danger">{errors.contact}</div>
+                )}
+              </div>
+              <div className="col-md-6">
+                <input
+                  type="text"
+                  name="companyName"
+                  value={formData.companyName}
+                  onChange={handleChange}
+                  className="form-control border-1 rounded-2 box-shadow mb-4"
+                  placeholder="Company Name"
                 />
               </div>
               <div className="col-12 ">
@@ -98,7 +145,11 @@ const ContactSection = () => {
                 ></textarea>
               </div>
               <div className="col-12">
-                <button type="button" onClick={handleSubmit} className="button">
+                <button
+                  type="button"
+                  onClick={handleSubmit}
+                  className="button"
+                >
                   Send Message
                 </button>
               </div>
