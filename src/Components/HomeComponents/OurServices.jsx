@@ -77,8 +77,8 @@ const OurServices = () => {
             />
           </div>
         </div>
-        <div className='col-lg-6  order-lg-2 order-1 mb-3 '>
-          <div style={{ textAlign: "justify" }} className='mb-5 shadow p-3 box'>
+        <div className='col-lg-6  order-lg-2 order-1  '>
+          <div style={{ textAlign: "justify" }} className='mb-4 shadow p-3 box'>
             <h4 className="mb-3"> CUSTOMER SERVICES</h4>
             <p>
               Customer service refers to the assistance and support provided to

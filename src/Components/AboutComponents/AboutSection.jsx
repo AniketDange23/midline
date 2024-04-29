@@ -15,7 +15,7 @@ const AboutSection = () => {
         <div className="col-lg-6 order-lg-1 order-2 d-flex align-items-center justify-content-center" data-aos="fade-up">
           <div data-aos="flip-up" className="feature-img-bg box-shadow  ">
             <img
-              className="img-fluid"
+              className="img-fluid rounded-2"
               src="/images/h3.jpg"
               alt="feature-image"
               style={{width:"500px"}}
