@@ -6,9 +6,10 @@ body {
   font-size: 15px;
   color: #818385;
 }
-@media (min-width: 344px) {
+@media (max-width: 344px) {
   .col-lg-5 {
-text-align: center;  }
+    text-align: center;
+  }
   .col {
     text-align: center;
   }
@@ -76,11 +77,11 @@ h6,
 .h6 {
   font-size: 16px;
 }
-span{
-  text-align: justify!important;
+span {
+  text-align: justify !important;
 }
-b{
-  font: 500 1.1rem "inter",sans-serif ;
+b {
+  font: 500 1.1rem "inter", sans-serif;
   color: #000000;
 }
 
@@ -194,10 +195,9 @@ a {
   background: #26589e;
 }
 
-.bg-grey{
+.bg-grey {
   background: #000;
 }
-
 
 /* bg */
 .bg-img {
@@ -238,11 +238,10 @@ a.text-dark:hover {
   color: #26589e !important;
 }
 
-.box{
-border: 2px solid #1D5DB6;
+.box {
+  border: 2px solid #1d5db6;
   border-radius: 10px;
   padding: 10px;
-
 }
 /* section */
 .section {
@@ -711,15 +710,15 @@ textarea.form-control-sm {
   border-color: #26589e;
 }
 
-
-
-.footer{
-  background: linear-gradient(109.6deg, rgb(10, 19, 35) 11.2%, rgb(17, 40, 66) 91.1%);
+.footer {
+  background: linear-gradient(
+    109.6deg,
+    rgb(10, 19, 35) 11.2%,
+    rgb(17, 40, 66) 91.1%
+  );
 }
 
-
 .navigation {
-
   box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.151);
   position: relative;
   z-index: 1;
@@ -802,14 +801,14 @@ textarea.form-control-sm {
 .service-wrapper {
   transform: translateY(-200px);
 }
-.card{
+.card {
   border: none;
   padding: 10px;
   transition: transform 0.5s;
 }
 
 .card:hover {
-box-shadow: 2px 2px 3px 3px #e5e5e5;
+  box-shadow: 2px 2px 3px 3px #e5e5e5;
 }
 
 .service-bg-dots {
@@ -827,7 +826,6 @@ box-shadow: 2px 2px 3px 3px #e5e5e5;
   background-size: cover;
   z-index: 0;
 }
-
 
 /* /team */
 /* project */
@@ -848,8 +846,6 @@ box-shadow: 2px 2px 3px 3px #e5e5e5;
 .project-item:hover .hover-overlay a {
   transform: translateY(-50%) scale(1);
 }
-
-
 
 /* Style for the success toast message */
 .Toastify__toast--success {
