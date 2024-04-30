@@ -6,10 +6,9 @@ body {
   font-size: 15px;
   color: #818385;
 }
-@media (max-width: 380px) {
+@media (min-width: 344px) {
   .col-lg-5 {
-    text-align: center;
-  }
+text-align: center;  }
   .col {
     text-align: center;
   }
