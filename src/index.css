@@ -6,6 +6,14 @@ body {
   font-size: 15px;
   color: #818385;
 }
+@media (max-width: 380px) {
+  .col-lg-5 {
+    text-align: center;
+  }
+  .col {
+    text-align: center;
+  }
+}
 
 .typewriter h3 {
   color: #fff; /* Sets the text color to white */

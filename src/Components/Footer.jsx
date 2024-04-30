@@ -66,12 +66,7 @@ const Footer = () => {
                         Services
                       </Link>
                     </li>
-                    <li className='mb-3 text-light'>
-                      <Link className='text-light d-block' to='/healthproject'>
-                        <IoMdArrowDropright style={{ marginRight: "2px" }} />
-                        Projects
-                      </Link>
-                    </li>
+                  
                     <li className='mb-3 text-light'>
                       <Link className='text-light d-block' to='/contact'>
                         <IoMdArrowDropright style={{ marginRight: "2px" }} />

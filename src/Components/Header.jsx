@@ -50,7 +50,6 @@ const Header = () => {
     { text: "Home", link: "/" },
     { text: "About ", link: "/about" },
     { text: "Services", link: "/services" },
-    // { text: "Project", link: "/healthproject" },
     { text: "Contact", link: "/contact#form" },
   ];
 
