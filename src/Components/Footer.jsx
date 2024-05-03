@@ -80,8 +80,9 @@ const Footer = () => {
                   <h4 className='text-white mb-4'>Contact Info</h4>
                   <ul className='list-unstyled'>
                     <li className='mb-3 text-light'>
-                      <Link className='text-light d-block' to='#'>
-                        <IoLocationOutline /> Opposite Bank of Baroda, Ward
+                      <Link className='text-light d-block' to='https://maps.app.goo.gl/T7oay3TimBpSGgxy6'>
+                        <IoLocationOutline /> 
+                        Opposite Bank of Baroda, Ward
                         Number 3, Parsodi, Trimurtee Nagar, Nagpur, Maharashtra
                         440022
                       </Link>
@@ -97,7 +98,7 @@ const Footer = () => {
                     <li className='mb-3 text-light'>
                       <Link
                         className='text-light d-block'
-                        to='callto:+91 8830826434'
+                        to='tel:+918956101181'
                       >
                         <MdLocalPhone /> +91 8830826434
                       </Link>

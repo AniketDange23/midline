@@ -47,7 +47,7 @@ const TopBar = () => {
               <li className='list-inline-item mx-0'>
                 <Link
                   className='text-white d-inline-block px-lg-3 px-2'
-                  to='callto:+91 8830826434'
+                  to='tel:+918956101181'
                 >
                   <MdPhoneInTalk /> Call Now :{" "}
                   <span className=''>+91 8830826434</span>
