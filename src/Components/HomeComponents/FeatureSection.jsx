@@ -36,8 +36,8 @@ const FeatureSection = () => {
       <div className='row    py-5'>
         <div className='col-lg-6 col-md-8   justify-content-center d-flex'>
           <img
-            src='./image1-min.JPG'
-            className='img-fluid rounded-2 shadow'
+            src='./image2.jpg'
+            className='img-fluid rounded-2 '
             style={{ width: "550px", objectFit:"cover" }}
             alt=''
           />
