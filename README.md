@@ -5,8 +5,7 @@
     <h1 align="center">MIDLINE</h1>
 </p>
 <p align="center">
-    <em>HTTP error 401 for prompt `slogan`</em>
-</p>
+<a href="https://midline-solution.netlify.app/"> Website Link</a> </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/AniketDange23/midline?style=flat&color=0080ff" alt="license">
 	<img src="https://img.shields.io/github/last-commit/AniketDange23/midline?style=flat&logo=git&logoColor=white&color=0080ff" alt="last-commit">
